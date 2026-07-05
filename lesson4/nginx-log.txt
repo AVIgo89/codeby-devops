@@ -1,0 +1,116 @@
+Script started on 2026-07-05 12:34:56+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="110" LINES="56"]
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson4# [7msudo systemctl is-enabled my-nginx[27msudo systemctl is-enabled my-nginx[1P[1P[1P[1P[1P
+[?2004lenabled
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson4# [7msudo systemctl status my-nginx[27msudo systemctl status my-nginx[1P[1P[1P[1P[1P
+[?2004l[?1h=[0;1;32m●[0m my-nginx.service - My Custom Nginx Server[m
+     Loaded: loaded (]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: [0;1;32mactive (running)[0m since Sun 2026-07-05 12:30:11 MSK; 5min ago[m
+ Invocation: 9fec6fa85cd441288f2ade9faf87c969[m
+       Docs: ]8;;http://nginx.org/en/docs/\http://nginx.org/en/docs/]8;;\[m]8;;\
+    Process: 28880 ExecStartPre=/usr/sbin/nginx -t (code=exited, status=0/SUCCESS)[m
+    Process: 28881 ExecStart=/usr/sbin/nginx (code=exited, status=0/SUCCESS)[m
+   Main PID: 28883 (nginx)[m
+      Tasks: 9[0;38:5:245m (limit: 9401)[0m[m
+     Memory: 7.3M (peak: 7.9M)[m
+        CPU: 92ms[m
+     CGroup: /system.slice/my-nginx.service[m
+             ├─[0;38:5:245m28883 "nginx: master process /usr/sbin/nginx"[0m[m
+             ├─[0;38:5:245m28884 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28885 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28887 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28888 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28889 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28890 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28891 "nginx: worker process"[0m[m
+             └─[0;38:5:245m28892 "nginx: worker process"[0m[m
+[m
+Jul 05 12:30:11 AVIgo systemd[1]: Starting my-nginx.service - My Custom Nginx Server...[m
+Jul 05 12:30:11 AVIgo nginx[28880]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok[m
+Jul 05 12:30:11 AVIgo nginx[28880]: nginx: configuration file /etc/nginx/nginx.conf test is successful[m
+Jul 05 12:30:11 AVIgo systemd[1]: Started my-nginx.service - My Custom Nginx Server.[m
+Jul 05 12:30:14 AVIgo systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\:1: Assignment outside of section. Igno[m]8;;\[7m>[27m
+Jul 05 12:34:06 AVIgo systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\:1: Assignment outside of section. Igno[m]8;;\[7m>[27m
+Jul 05 12:35:24 AVIgo systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\:1: Assignment outside of section. Igno[m]8;;\[7m>[27m
+[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+[0;1;32m●[0m my-nginx.service - My Custom Nginx Server[m
+     Loaded: loaded (]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: [0;1;32mactive (running)[0m since Sun 2026-07-05 12:30:11 MSK; 5min ago[m
+ Invocation: 9fec6fa85cd441288f2ade9faf87c969[m
+       Docs: ]8;;http://nginx.org/en/docs/\http://nginx.org/en/docs/]8;;\[m]8;;\
+    Process: 28880 ExecStartPre=/usr/sbin/nginx -t (code=exited, status=0/SUCCESS)[m
+    Process: 28881 ExecStart=/usr/sbin/nginx (code=exited, status=0/SUCCESS)[m
+   Main PID: 28883 (nginx)[m
+      Tasks: 9[0;38:5:245m (limit: 9401)[0m[m
+     Memory: 7.3M (peak: 7.9M)[m
+        CPU: 92ms[m
+     CGroup: /system.slice/my-nginx.service[m
+             ├─[0;38:5:245m28883 "nginx: master process /usr/sbin/nginx"[0m[m
+             ├─[0;38:5:245m28884 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28885 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28887 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28888 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28889 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28890 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m28891 "nginx: worker process"[0m[m
+             └─[0;38:5:245m28892 "nginx: worker process"[0m[m
+[m
+Jul 05 12:30:11 AVIgo systemd[1]: Starting my-nginx.service - My Custom Nginx Server...[m
+Jul 05 12:30:11 AVIgo nginx[28880]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok[m
+Jul 05 12:30:11 AVIgo nginx[28880]: nginx: configuration file /etc/nginx/nginx.conf test is successful[m
+Jul 05 12:30:11 AVIgo systemd[1]: Started my-nginx.service - My Custom Nginx Server.[m
+Jul 05 12:30:14 AVIgo systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\:1: Assignment outside of section. Igno[m]8;;\[7m>[27m
+Jul 05 12:34:06 AVIgo systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\:1: Assignment outside of section. Igno[m]8;;\[7m>[27m
+Jul 05 12:35:24 AVIgo systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185m]8;;file://AVIgo/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\:1: Assignment outside of section. Igno[m]8;;\[7m>[27m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-29/29 (END)[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-29/29 (END)[27m[K[K[?1l>
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson4# cat [7m/etc/systemd/system/my-nginx.service[27m/etc/systemd/system/my-nginx.service
+[?2004lini
+
+[Unit]
+Description=My Custom Nginx Server
+Documentation=http://nginx.org/en/docs/
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/run/nginx.pid
+ExecStartPre=/usr/sbin/nginx -t
+ExecStart=/usr/sbin/nginx
+ExecReload=/usr/sbin/nginx -s reload
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson4# [7msudo ss -tlnp | grep :80[27msudo ss -tlnp | grep :80
+[?2004lLISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=28892,fd=5),("nginx",pid=28891,fd=5),("nginx",pid=28890,fd=5),("nginx",pid=28889,fd=5),("nginx",pid=28888,fd=5),("nginx",pid=28887,fd=5),("nginx",pid=28885,fd=5),("nginx",pid=28884,fd=5),("nginx",pid=28883,fd=5))
+LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=28892,fd=6),("nginx",pid=28891,fd=6),("nginx",pid=28890,fd=6),("nginx",pid=28889,fd=6),("nginx",pid=28888,fd=6),("nginx",pid=28887,fd=6),("nginx",pid=28885,fd=6),("nginx",pid=28884,fd=6),("nginx",pid=28883,fd=6))
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson4# exit
+[?2004lexit
+
+Script done on 2026-07-05 12:37:06+03:00 [COMMAND_EXIT_CODE="0"]
