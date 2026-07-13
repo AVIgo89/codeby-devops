@@ -1,0 +1,900 @@
+Script started on 2026-07-13 19:58:24+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="110" LINES="37"]
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlsb_release -a[27mlsb_release -a
+[?2004lNo LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 13 (trixie)
+Release:	13
+Codename:	trixie
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxd --version[27mlxd --version
+[?2004l5.0.2
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc info[27mlxc info
+[?2004lconfig: {}
+api_extensions:
+- storage_zfs_remove_snapshots
+- container_host_shutdown_timeout
+- container_stop_priority
+- container_syscall_filtering
+- auth_pki
+- container_last_used_at
+- etag
+- patch
+- usb_devices
+- https_allowed_credentials
+- image_compression_algorithm
+- directory_manipulation
+- container_cpu_time
+- storage_zfs_use_refquota
+- storage_lvm_mount_options
+- network
+- profile_usedby
+- container_push
+- container_exec_recording
+- certificate_update
+- container_exec_signal_handling
+- gpu_devices
+- container_image_properties
+- migration_progress
+- id_map
+- network_firewall_filtering
+- network_routes
+- storage
+- file_delete
+- file_append
+- network_dhcp_expiry
+- storage_lvm_vg_rename
+- storage_lvm_thinpool_rename
+- network_vlan
+- image_create_aliases
+- container_stateless_copy
+- container_only_migration
+- storage_zfs_clone_copy
+- unix_device_rename
+- storage_lvm_use_thinpool
+- storage_rsync_bwlimit
+- network_vxlan_interface
+- storage_btrfs_mount_options
+- entity_description
+- image_force_refresh
+- storage_lvm_lv_resizing
+- id_map_base
+- file_symlinks
+- container_push_target
+- network_vlan_physical
+- storage_images_delete
+- container_edit_metadata
+- container_snapshot_stateful_migration
+- storage_driver_ceph
+- storage_ceph_user_name
+- resource_limits
+- storage_volatile_initial_source
+- storage_ceph_force_osd_reuse
+- storage_block_filesystem_btrfs
+- resources
+- kernel_limits
+- storage_api_volume_rename
+- macaroon_authentication
+- network_sriov
+- console
+- restrict_devlxd
+- migration_pre_copy
+- infiniband
+- maas_network
+- devlxd_events
+- proxy
+- network_dhcp_gateway
+- file_get_symlink
+- network_leases
+- unix_device_hotplug
+- storage_api_local_volume_handling
+- operation_description
+- clustering
+- event_lifecycle
+- storage_api_remote_volume_handling
+- nvidia_runtime
+- container_mount_propagation
+- container_backup
+- devlxd_images
+- container_local_cross_pool_handling
+- proxy_unix
+- proxy_udp
+- clustering_join
+- proxy_tcp_udp_multi_port_handling
+- network_state
+- proxy_unix_dac_properties
+- container_protection_delete
+- unix_priv_drop
+- pprof_http
+- proxy_haproxy_protocol
+- network_hwaddr
+- proxy_nat
+- network_nat_order
+- container_full
+- candid_authentication
+- backup_compression
+- candid_config
+- nvidia_runtime_config
+- storage_api_volume_snapshots
+- storage_unmapped
+- projects
+- candid_config_key
+- network_vxlan_ttl
+- container_incremental_copy
+- usb_optional_vendorid
+- snapshot_scheduling
+- snapshot_schedule_aliases
+- container_copy_project
+- clustering_server_address
+- clustering_image_replication
+- container_protection_shift
+- snapshot_expiry
+- container_backup_override_pool
+- snapshot_expiry_creation
+- network_leases_location
+- resources_cpu_socket
+- resources_gpu
+- resources_numa
+- kernel_features
+- id_map_current
+- event_location
+- storage_api_remote_volume_snapshots
+- network_nat_address
+- container_nic_routes
+- rbac
+- cluster_internal_copy
+- seccomp_notify
+- lxc_features
+- container_nic_ipvlan
+- network_vlan_sriov
+- storage_cephfs
+- container_nic_ipfilter
+- resources_v2
+- container_exec_user_group_cwd
+- container_syscall_intercept
+- container_disk_shift
+- storage_shifted
+- resources_infiniband
+- daemon_storage
+- instances
+- image_types
+- resources_disk_sata
+- clustering_roles
+- images_expiry
+- resources_network_firmware
+- backup_compression_algorithm
+- ceph_data_pool_name
+- container_syscall_intercept_mount
+- compression_squashfs
+- container_raw_mount
+- container_nic_routed
+- container_syscall_intercept_mount_fuse
+- container_disk_ceph
+- virtual-machines
+- image_profiles
+- clustering_architecture
+- resources_disk_id
+- storage_lvm_stripes
+- vm_boot_priority
+- unix_hotplug_devices
+- api_filtering
+- instance_nic_network
+- clustering_sizing
+- firewall_driver
+- projects_limits
+- container_syscall_intercept_hugetlbfs
+- limits_hugepages
+- container_nic_routed_gateway
+- projects_restrictions
+- custom_volume_snapshot_expiry
+- volume_snapshot_scheduling
+- trust_ca_certificates
+- snapshot_disk_usage
+- clustering_edit_roles
+- container_nic_routed_host_address
+- container_nic_ipvlan_gateway
+- resources_usb_pci
+- resources_cpu_threads_numa
+- resources_cpu_core_die
+- api_os
+- container_nic_routed_host_table
+- container_nic_ipvlan_host_table
+- container_nic_ipvlan_mode
+- resources_system
+- images_push_relay
+- network_dns_search
+- container_nic_routed_limits
+- instance_nic_bridged_vlan
+- network_state_bond_bridge
+- usedby_consistency
+- custom_block_volumes
+- clustering_failure_domains
+- resources_gpu_mdev
+- console_vga_type
+- projects_limits_disk
+- network_type_macvlan
+- network_type_sriov
+- container_syscall_intercept_bpf_devices
+- network_type_ovn
+- projects_networks
+- projects_networks_restricted_uplinks
+- custom_volume_backup
+- backup_override_name
+- storage_rsync_compression
+- network_type_physical
+- network_ovn_external_subnets
+- network_ovn_nat
+- network_ovn_external_routes_remove
+- tpm_device_type
+- storage_zfs_clone_copy_rebase
+- gpu_mdev
+- resources_pci_iommu
+- resources_network_usb
+- resources_disk_address
+- network_physical_ovn_ingress_mode
+- network_ovn_dhcp
+- network_physical_routes_anycast
+- projects_limits_instances
+- network_state_vlan
+- instance_nic_bridged_port_isolation
+- instance_bulk_state_change
+- network_gvrp
+- instance_pool_move
+- gpu_sriov
+- pci_device_type
+- storage_volume_state
+- network_acl
+- migration_stateful
+- disk_state_quota
+- storage_ceph_features
+- projects_compression
+- projects_images_remote_cache_expiry
+- certificate_project
+- network_ovn_acl
+- projects_images_auto_update
+- projects_restricted_cluster_target
+- images_default_architecture
+- network_ovn_acl_defaults
+- gpu_mig
+- project_usage
+- network_bridge_acl
+- warnings
+- projects_restricted_backups_and_snapshots
+- clustering_join_token
+- clustering_description
+- server_trusted_proxy
+- clustering_update_cert
+- storage_api_project
+- server_instance_driver_operational
+- server_supported_storage_drivers
+- event_lifecycle_requestor_address
+- resources_gpu_usb
+- clustering_evacuation
+- network_ovn_nat_address
+- network_bgp
+- network_forward
+- custom_volume_refresh
+- network_counters_errors_dropped
+- metrics
+- image_source_project
+- clustering_config
+- network_peer
+- linux_sysctl
+- network_dns
+- ovn_nic_acceleration
+- certificate_self_renewal
+- instance_project_move
+- storage_volume_project_move
+- cloud_init
+- network_dns_nat
+- database_leader
+- instance_all_projects
+- clustering_groups
+- ceph_rbd_du
+- instance_get_full
+- qemu_metrics
+- gpu_mig_uuid
+- event_project
+- clustering_evacuation_live
+- instance_allow_inconsistent_copy
+- network_state_ovn
+- storage_volume_api_filtering
+- image_restrictions
+- storage_zfs_export
+- network_dns_records
+- storage_zfs_reserve_space
+- network_acl_log
+- storage_zfs_blocksize
+- metrics_cpu_seconds
+- instance_snapshot_never
+- certificate_token
+- instance_nic_routed_neighbor_probe
+- event_hub
+- agent_nic_config
+- projects_restricted_intercept
+- metrics_authentication
+- images_target_project
+- cluster_migration_inconsistent_copy
+- cluster_ovn_chassis
+- container_syscall_intercept_sched_setscheduler
+- storage_lvm_thinpool_metadata_size
+- storage_volume_state_total
+- instance_file_head
+- resources_pci_vpd
+- qemu_raw_conf
+- storage_cephfs_fscache
+- vsock_api
+- storage_volumes_all_projects
+- projects_networks_restricted_access
+- cluster_join_token_expiry
+- remote_token_expiry
+- init_preseed
+- cpu_hotplug
+- storage_pool_source_wipe
+- zfs_block_mode
+- instance_generation_id
+- disk_io_cache
+- storage_pool_loop_resize
+- migration_vm_live
+- auth_user
+- instances_state_total
+- numa_cpu_placement
+- network_allocations
+- storage_api_remote_volume_snapshot_copy
+- zfs_delegate
+- operations_get_query_all_projects
+- event_lifecycle_name_and_project
+- instances_nic_limits_priority
+- operation_wait
+api_status: stable
+api_version: "1.0"
+auth: trusted
+public: false
+auth_methods:
+- tls
+auth_user_name: root
+auth_user_method: unix
+environment:
+  addresses: []
+  architectures:
+  - x86_64
+  - i686
+  certificate: |
+    -----BEGIN CERTIFICATE-----
+    MIIB4TCCAWagAwIBAgIQP/Bjo9zB+j/cDRma9m3M+DAKBggqhkjOPQQDAzAjMQww
+    CgYDVQQKEwNMWEQxEzARBgNVBAMMCnJvb3RAQVZJZ28wHhcNMjYwNzEzMTY0MzM1
+    WhcNMzYwNzEwMTY0MzM1WjAjMQwwCgYDVQQKEwNMWEQxEzARBgNVBAMMCnJvb3RA
+    QVZJZ28wdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAQ8oZCMRwImsSRkZeTHVdH5tvGs
+    Xp6s6sIwdSAH+/EEbPlM3OGj0tMRVg2MPFLbj4V9GiD4/foOYjxB+uWmlEhcDGUL
+    v8uwRNMkmfd1v36rCICIiFTtYeunbKKkFyicm/ejXzBdMA4GA1UdDwEB/wQEAwIF
+    oDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMCgGA1UdEQQhMB+C
+    BUFWSWdvhwR/AAABhxAAAAAAAAAAAAAAAAAAAAABMAoGCCqGSM49BAMDA2kAMGYC
+    MQCz2RmQYSJB3xbD8k3PmzB7Rl0C/A0Ot9l5x4qGzTjhysTX1Vd92LouoyLRObM5
+    Y+MCMQCHCexH3dQK9M9J2WnEYfkTpK7hhc/aOEr4NXt7Dg078ajwlhC1oJ/OhAUm
+    5deFkPA=
+    -----END CERTIFICATE-----
+  certificate_fingerprint: 78673ea9da9b7a357193b6030bc4bf6692c5c2021e530b7ac643f475e4362740
+  driver: lxc
+  driver_version: 6.0.4
+  firewall: nftables
+  kernel: Linux
+  kernel_architecture: x86_64
+  kernel_features:
+    idmapped_mounts: "true"
+    netnsid_getifaddrs: "true"
+    seccomp_listener: "true"
+    seccomp_listener_continue: "true"
+    shiftfs: "false"
+    uevent_injection: "true"
+    unpriv_fscaps: "true"
+  kernel_version: 6.12.94+deb13-amd64
+  lxc_features:
+    cgroup2: "true"
+    core_scheduling: "true"
+    devpts_fd: "true"
+    idmapped_mounts_v2: "true"
+    mount_injection_file: "true"
+    network_gateway_device_route: "true"
+    network_ipvlan: "true"
+    network_l2proxy: "true"
+    network_phys_macvlan_mtu: "true"
+    network_veth_router: "true"
+    pidfd: "true"
+    seccomp_allow_deny_syntax: "true"
+    seccomp_notify: "true"
+    seccomp_proxy_send_notify_fd: "true"
+  os_name: Debian GNU/Linux
+  os_version: "13"
+  project: default
+  server: lxd
+  server_clustered: false
+  server_event_mode: full-mesh
+  server_name: AVIgo
+  server_pid: 6005
+  server_version: 5.0.2
+  storage: dir
+  storage_version: "1"
+  storage_supported_drivers:
+  - name: dir
+    version: "1"
+    remote: false
+  - name: lvm
+    version: 2.03.31(2) (2025-02-27) / 1.02.205 (2025-02-27) / 4.48.0
+    remote: false
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc image list[27mlxc image list
+[?2004l+-------+--------------+--------+---------------------------------------------+--------------+-----------+-----------+------------------------------+
+| ALIAS | FINGERPRINT  | PUBLIC |                 DESCRIPTION                 | ARCHITECTURE |   TYPE    |   SIZE    |         UPLOAD DATE          |
++-------+--------------+--------+---------------------------------------------+--------------+-----------+-----------+------------------------------+
+|       | 5aa497aeb3c3 | no     | ubuntu 24.04 LTS amd64 (release) (20260615) | x86_64       | CONTAINER | 264.03MiB | Jul 13, 2026 at 4:46pm (UTC) |
++-------+--------------+--------+---------------------------------------------+--------------+-----------+-----------+------------------------------+
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc info apache-container[27mlxc info apache-container
+[?2004lError: Instance not found
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc list[27mlxc list
+[?2004l+---------------------+---------+---------------------+----------------------------------------------+-----------+-----------+
+|        NAME         |  STATE  |        IPV4         |                     IPV6                     |   TYPE    | SNAPSHOTS |
++---------------------+---------+---------------------+----------------------------------------------+-----------+-----------+
+| my-apache-container | RUNNING | 10.17.86.140 (eth0) | fd42:d015:ba47:b88f:216:3eff:fe2d:18d (eth0) | CONTAINER | 0         |
++---------------------+---------+---------------------+----------------------------------------------+-----------+-----------+
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc info apache-container --show-log[27mlxc info apache-container --show-log
+[?2004lError: Instance not found
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc exec apache-container -- ps aux[27mlxc exec apache-container -- ps aux
+[?2004lError: Instance not found
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# lxc exec apache-container -- ps auxinfo apache-container --show-loglist[Kinfo apache-container --show-log[1@ь[1@н[1@-[1P[1P[1P[1@m[1@y[1@-
+[?2004lName: my-apache-container
+Status: RUNNING
+Type: container
+Architecture: x86_64
+PID: 6407
+Created: 2026/07/13 19:46 MSK
+Last Used: 2026/07/13 19:46 MSK
+
+Resources:
+  Processes: 80
+  CPU usage:
+    CPU usage (in seconds): 44
+  Memory usage:
+    Memory (current): 379.04MiB
+  Network usage:
+    lo:
+      Type: loopback
+      State: UP
+      MTU: 65536
+      Bytes received: 26.09kB
+      Bytes sent: 26.09kB
+      Packets received: 91
+      Packets sent: 91
+      IP addresses:
+        inet:  127.0.0.1/8 (local)
+        inet6: ::1/128 (local)
+    eth0:
+      Type: broadcast
+      State: UP
+      Host interface: vethee05eff6
+      MAC address: 00:16:3e:2d:01:8d
+      MTU: 1500
+      Bytes received: 38.70MB
+      Bytes sent: 402.82kB
+      Packets received: 7862
+      Packets sent: 4767
+      IP addresses:
+        inet:  10.17.86.140/24 (global)
+        inet6: fd42:d015:ba47:b88f:216:3eff:fe2d:18d/64 (global)
+        inet6: fe80::216:3eff:fe2d:18d/64 (link)
+
+Log:
+
+
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc exec apache-container -- ps aux[27mlxc exec apache-container -- ps aux[1@m[1@y[1@-
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  22304 13644 ?        Ss   16:46   0:02 /sbin/init
+root          53  0.0  0.1  33968 13564 ?        Ss   16:46   0:00 /usr/lib/systemd/systemd-journald
+root         120  0.0  0.0  25312  7548 ?        Ss   16:46   0:00 /usr/lib/systemd/systemd-udevd
+systemd+     156  0.0  0.1  21588 13436 ?        Ss   16:46   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     308  0.0  0.1  18996  9628 ?        Ss   16:46   0:00 /usr/lib/systemd/systemd-networkd
+root         346  0.0  0.0   7224  2752 ?        Ss   16:46   0:00 /usr/sbin/cron -f -P
+message+     347  0.0  0.0   9772  5476 ?        Ss   16:46   0:00 @dbus-daemon --system --address=systemd: --
+polkitd      350  0.0  0.1 383660 10036 ?        Ssl  16:46   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         355  0.0  0.0  17596  8032 ?        Ss   16:46   0:00 /usr/lib/systemd/systemd-logind
+root         366  0.0  0.1 468600 13324 ?        Ssl  16:46   0:00 /usr/libexec/udisks2/udisksd
+root         381  0.0  0.0   6148  2160 pts/0    Ss+  16:46   0:00 /sbin/agetty -o -p -- \u --noclear --keep-b
+syslog       389  0.0  0.0 152872  5616 ?        Ssl  16:46   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         393  0.0  0.2 110012 23272 ?        Ssl  16:46   0:00 /usr/bin/python3 /usr/share/unattended-upgr
+root        1435  0.0  0.0   6880  5112 ?        Ss   16:46   0:00 /usr/sbin/apache2 -k start
+www-data    1437  0.0  0.0 1933940 6956 ?        Sl   16:46   0:00 /usr/sbin/apache2 -k start
+www-data    1438  0.0  0.0 1999476 6960 ?        Sl   16:46   0:00 /usr/sbin/apache2 -k start
+www-data    1541  0.0  0.0   3620  1648 ?        Ss   16:46   0:00 /usr/bin/htcacheclean -d 120 -p /var/cache/
+root        1702  0.0  0.0  11320  4420 pts/1    Rs+  17:02   0:00 ps aux
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc exec apache-container -- lsb_release -a[27mlxc exec apache-container -- lsb_release -a[C[1@m[1@y[1@-
+[?2004lNo LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.4 LTS
+Release:	24.04
+Codename:	noble
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mlxc exec apache-container -- uname -a[27mlxc exec apache-container -- uname -a[1@m[1@y[1@-
+[?2004lLinux my-apache-container 6.12.94+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.94-1 (2026-06-20) x86_64 x86_64 x86_64 GNU/Linux
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# [7mcurl -v http://127.0.0.1:8080[27mcurl -v http://127.0.0.1:8080
+[?2004l*   Trying 127.0.0.1:8080...
+* Connected to 127.0.0.1 (127.0.0.1) port 8080
+* using HTTP/1.x
+> GET / HTTP/1.1
+> Host: 127.0.0.1:8080
+> User-Agent: curl/8.14.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Date: Mon, 13 Jul 2026 17:03:22 GMT
+< Server: Apache/2.4.58 (Ubuntu)
+< Last-Modified: Mon, 13 Jul 2026 16:46:53 GMT
+< ETag: "29af-65680d668ac61"
+< Accept-Ranges: bytes
+< Content-Length: 10671
+< Vary: Accept-Encoding
+< Content-Type: text/html
+< 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2022-03-22
+    See: https://launchpad.net/bugs/1966004
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Apache2 Ubuntu Default Page: It works</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Ubuntu, Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 180px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.banner {
+    padding: 9px 6px 9px 6px;
+    background-color: #E9510E;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+    width: 20%;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    </style>
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <img src="icons/ubuntu-logo.png" alt="Ubuntu Logo"
+             style="width:184px;height:146px;" class="floating_element" />
+        <div>
+          <span style="margin-top: 1.5em;" class="floating_element">
+            Apache2 Default Page
+          </span>
+        </div>
+        <div class="banner">
+          <div id="about"></div>
+          It works!
+        </div>
+
+      </div>
+      <div class="content_section floating_element">
+        <div class="content_section_text">
+          <p>
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should <b>replace this file</b> (located at
+                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+          </p>
+
+          <p>
+                If you are a normal user of this web site and don't know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site's administrator.
+          </p>
+
+        </div>
+        <div class="section_header">
+          <div id="changes"></div>
+                Configuration Overview
+        </div>
+        <div class="content_section_text">
+          <p>
+                Ubuntu's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                <b>fully documented in
+                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+                package was installed on this server.
+          </p>
+          <p>
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          </p>
+          <pre>
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          </pre>
+          <ul>
+                        <li>
+                           <tt>apache2.conf</tt> is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        </li>
+
+                        <li>
+                           <tt>ports.conf</tt> is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        </li>
+
+                        <li>
+                           Configuration files in the <tt>mods-enabled/</tt>,
+                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        </li>
+
+                        <li>
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           <tt>
+                                a2enmod,
+                                a2dismod,
+                           </tt>
+                           <tt>
+                                a2ensite,
+                                a2dissite,
+                            </tt>
+                                and
+                           <tt>
+                                a2enconf,
+                                a2disconf
+                           </tt>. See their respective man pages for detailed information.
+                        </li>
+
+                        <li>
+                           The binary is called apache2 and is managed using systemd, so to
+                           start/stop the service use <tt>systemctl start apache2</tt> and
+                           <tt>systemctl stop apache2</tt>, and use <tt>systemctl status apache2</tt>
+                           and <tt>journalctl -u apache2</tt> to check status.  <tt>system</tt>
+                           and <tt>apache2ctl</tt> can also be used for service management if
+                           desired.
+                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                           default configuration.
+                        </li>
+          </ul>
+        </div>
+
+        <div class="section_header">
+            <div id="docroot"></div>
+                Document Roots
+        </div>
+
+        <div class="content_section_text">
+            <p>
+                By default, Ubuntu does not allow access through the web browser to
+                <em>any</em> file outside of those located in <tt>/var/www</tt>,
+                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
+                directories (when enabled) and <tt>/usr/share</tt> (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+            </p>
+            <p>
+                The default Ubuntu document root is <tt>/var/www/html</tt>. You
+                can make your own virtual hosts under /var/www.
+            </p>
+        </div>
+
+        <div class="section_header">
+          <div id="bugs"></div>
+                Reporting Problems
+        </div>
+        <div class="content_section_text">
+          <p>
+                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
+                Apache2 package with Ubuntu. However, check <a
+                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
+                rel="nofollow">existing bug reports</a> before reporting a new bug.
+          </p>
+          <p>
+                Please report bugs specific to modules (such as PHP and others)
+                to their respective packages, not to the web server itself.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="validator">
+    </div>
+  </body>
+</html>
+* Connection #0 to host 127.0.0.1 left intact
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson6# exit
+[?2004lexit
+
+Script done on 2026-07-13 20:03:46+03:00 [COMMAND_EXIT_CODE="0"]
