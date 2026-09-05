@@ -1,0 +1,50 @@
+Script started on 2026-09-05 13:29:13+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="172" LINES="28"]
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mdocker network ls | grep wp-net[27mdocker network ls | grep wp-net
+[?2004l
+d6e63198b25b   wp-net    bridge    local
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mdocker ps -a | grep wp-[27mdocker ps -a | grep wp-
+[?2004l
+39d2dac4792d   wordpress:latest       "docker-entrypoint.s…"   19 minutes ago   Up 19 minutes           0.0.0.0:8080->80/tcp, :::8080->80/tcp   wp-wordpress
+1699d020c442   mysql:8.0              "docker-entrypoint.s…"   21 minutes ago   Up 21 minutes           3306/tcp, 33060/tcp                     wp-mysql
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mdocker volume ls | grep wp-[27mdocker volume ls | grep wp-
+[?2004l
+local     wp-data
+local     wp-db
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mls -la ~/wordpress-apache-config/[27mls -la ~/wordpress-apache-config/
+[?2004l
+total 12
+drwxrwxr-x  2 root root 4096 Sep  5 13:07 .
+drwx------ 16 root root 4096 Sep  5 13:28 ..
+-rw-rw-r--  1 root root  334 Sep  5 13:07 wp.conf
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mdocker inspect wp-mysql | grep -A 5 "Mounts"[27mdocker inspect wp-mysql | grep -A 5 "Mounts"
+[?2004l
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "wp-db",
+                "Source": "/var/lib/docker/volumes/wp-db/_data",
+                "Destination": "/var/lib/mysql",
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mdocker inspect wp-wordpress | grep -A 10 "Mounts"[27mdocker inspect wp-wordpress | grep -A 10 "Mounts"
+[?2004l
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/root/wordpress-apache-config",
+                "Destination": "/etc/apache2/sites-available",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mdocker stop wp-mysql wp-wordpress[27mdocker stop wp-mysql wp-wordpress
+[?2004l
+wp-mysql
+wp-wordpress
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# [7mdocker rm wp-mysql wp-wordpress[27mdocker rm wp-mysql wp-wordpress^C[?2004l
+[?2004h[?2004l
+
+[?2004hroot@AVIgo:/home/user/DevOps/codeby-devops/lesson17# docker stop wp-mysql wp-wordpress[1P[1P[1P[1P[1@s[1@t[1@a[1@r[1@t
+[?2004l
+wp-mysql
+wp-wordpress
