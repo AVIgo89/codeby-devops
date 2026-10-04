@@ -1,0 +1,110 @@
+Branch indexing
+Connecting to https://api.github.com with no credentials, anonymous access
+Jenkins-Imposed API Limiter: Current quota for Github API usage has 49 remaining (1 over budget). Next quota of 60 in 54 min. Sleeping for 4 min 29 sec.
+Jenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+Jenkins-Imposed API Limiter: Still sleeping, now only 1 min 27 sec remaining.
+Jenkins-Imposed API Limiter: Current quota for Github API usage has 45 remaining (2 over budget). Next quota of 60 in 49 min. Sleeping for 6 min 7 sec.
+Jenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+Jenkins-Imposed API Limiter: Still sleeping, now only 3 min 5 sec remaining.
+Jenkins-Imposed API Limiter: Still sleeping, now only 4.2 sec remaining.
+Jenkins-Imposed API Limiter: Current quota for Github API usage has 42 remaining (1 over budget). Next quota of 60 in 43 min. Sleeping for 4 min 37 sec.
+Jenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+Jenkins-Imposed API Limiter: Still sleeping, now only 1 min 35 sec remaining.
+Jenkins-Imposed API Limiter: Current quota for Github API usage has 38 remaining (2 over budget). Next quota of 60 in 39 min. Sleeping for 6 min 28 sec.
+Jenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+Jenkins-Imposed API Limiter: Still sleeping, now only 3 min 25 sec remaining.
+Jenkins-Imposed API Limiter: Still sleeping, now only 24 sec remaining.
+Obtained Jenkinsfile from 85650a0760684c3e7b45a8d9d6b19a19fd8aacc3
+[Pipeline] Start of Pipeline
+[Pipeline] stage
+[Pipeline] { (Check Changes and Build in Parallel)
+[Pipeline] parallel
+[Pipeline] { (Branch: Hello World!)
+[Pipeline] { (Branch: Hello Jenkins!)
+[Pipeline] { (Branch: Hello Devops!)
+[Pipeline] stage
+[Pipeline] { (Hello World!)
+[Pipeline] stage
+[Pipeline] { (Hello Jenkins!)
+[Pipeline] stage
+[Pipeline] { (Hello Devops!)
+[Pipeline] echo
+Warning, empty changelog. Probably because this is the first build.
+[Pipeline] echo
+Warning, empty changelog. Probably because this is the first build.
+[Pipeline] echo
+Warning, empty changelog. Probably because this is the first build.
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] stage
+[Pipeline] { (Build)
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] stage
+[Pipeline] { (Test)
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] stage
+[Pipeline] { (Deploy)
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] }
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] }
+[Pipeline] }
+[Pipeline] // parallel
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] End of Pipeline
+Finished: SUCCESS
