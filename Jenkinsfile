@@ -1,17 +1,17 @@
 pipeline {
-    agent none // Важно: используем agent none, чтобы избежать дедлока исполнителей [citation:2]
+    agent none //  [citation:2]
 
     stages {
         stage('Check Changes and Build in Parallel') {
             parallel {
-                // Параллельная ветка для приложения Hello World!
+                
                 stage('Hello World!') {
-                    // Запускаем только если в коммите изменились файлы в папке hello-world/
+                    
                     when {
                         beforeAgent true
                         changeset "hello-world/**"
                     }
-                    agent { label 'maven' } // Ваш агент с меткой maven
+                    agent { label 'maven' } // агент с меткой maven
                     stages {
                         stage('Build') {
                             steps {
@@ -31,15 +31,14 @@ pipeline {
                             steps {
                                 dir('hello-world') {
                                     echo 'Deploying Hello World!...'
-                                    // Здесь можно добавить команду запуска, например:
-                                    // sh 'java -jar target/*.jar &'
+                                
                                 }
                             }
                         }
                     }
                 }
 
-                // Параллельная ветка для приложения Hello Jenkins!
+                
                 stage('Hello Jenkins!') {
                     when {
                         beforeAgent true
@@ -71,7 +70,7 @@ pipeline {
                     }
                 }
 
-                // Параллельная ветка для приложения Hello Devops!
+              
                 stage('Hello Devops!') {
                     when {
                         beforeAgent true
