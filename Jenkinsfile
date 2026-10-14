@@ -1,17 +1,16 @@
 pipeline {
-    agent none //  [citation:2]
+    agent none
 
     stages {
         stage('Check Changes and Build in Parallel') {
             parallel {
                 
                 stage('Hello World!') {
-                    
                     when {
                         beforeAgent true
                         changeset "hello-world/**"
                     }
-                    agent { label 'maven' } // агент с меткой maven
+                    agent { label 'maven' }
                     stages {
                         stage('Build') {
                             steps {
@@ -27,18 +26,32 @@ pipeline {
                                 }
                             }
                         }
+                        stage('SonarQube Analysis') {
+                            steps {
+                                dir('hello-world') {
+                                    withSonarQubeEnv('sonar-scanner') {
+                                        sh 'mvn sonar:sonar -Dsonar.projectKey=hello-world'
+                                    }
+                                }
+                            }
+                        }
+                        stage('Quality Gate') {
+                            steps {
+                                timeout(time: 1, unit: 'HOURS') {
+                                    waitForQualityGate abortPipeline: true
+                                }
+                            }
+                        }
                         stage('Deploy') {
                             steps {
                                 dir('hello-world') {
                                     echo 'Deploying Hello World!...'
-                                
                                 }
                             }
                         }
                     }
                 }
 
-                
                 stage('Hello Jenkins!') {
                     when {
                         beforeAgent true
@@ -60,6 +73,22 @@ pipeline {
                                 }
                             }
                         }
+                        stage('SonarQube Analysis') {
+                            steps {
+                                dir('hello-jenkins') {
+                                    withSonarQubeEnv('sonar-scanner') {
+                                        sh 'mvn sonar:sonar -Dsonar.projectKey=hello-jenkins'
+                                    }
+                                }
+                            }
+                        }
+                        stage('Quality Gate') {
+                            steps {
+                                timeout(time: 1, unit: 'HOURS') {
+                                    waitForQualityGate abortPipeline: true
+                                }
+                            }
+                        }
                         stage('Deploy') {
                             steps {
                                 dir('hello-jenkins') {
@@ -70,7 +99,6 @@ pipeline {
                     }
                 }
 
-              
                 stage('Hello Devops!') {
                     when {
                         beforeAgent true
@@ -89,6 +117,22 @@ pipeline {
                             steps {
                                 dir('hello-devops') {
                                     sh 'mvn test'
+                                }
+                            }
+                        }
+                        stage('SonarQube Analysis') {
+                            steps {
+                                dir('hello-devops') {
+                                    withSonarQubeEnv('sonar-scanner') {
+                                        sh 'mvn sonar:sonar -Dsonar.projectKey=hello-devops'
+                                    }
+                                }
+                            }
+                        }
+                        stage('Quality Gate') {
+                            steps {
+                                timeout(time: 1, unit: 'HOURS') {
+                                    waitForQualityGate abortPipeline: true
                                 }
                             }
                         }
