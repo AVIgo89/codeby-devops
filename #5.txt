@@ -1,0 +1,99 @@
+Started by user Авер Вад
+Connecting to https://api.github.com using AVIgo89/******
+Obtained Jenkinsfile from 0e2a11151205d73e42020152fd5304bf625dbb78
+[Pipeline] Start of Pipeline
+[Pipeline] stage
+[Pipeline] { (Check Changes and Build in Parallel)
+[Pipeline] parallel
+[Pipeline] { (Branch: Hello World!)
+[Pipeline] { (Branch: Hello Jenkins!)
+[Pipeline] { (Branch: Hello Devops!)
+[Pipeline] stage
+[Pipeline] { (Hello World!)
+[Pipeline] stage
+[Pipeline] { (Hello Jenkins!)
+[Pipeline] stage
+[Pipeline] { (Hello Devops!)
+[Pipeline] echo
+Warning, empty changelog. Have you run checkout?
+[Pipeline] echo
+Warning, empty changelog. Have you run checkout?
+[Pipeline] echo
+Warning, empty changelog. Have you run checkout?
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] stage
+[Pipeline] { (Build)
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] stage
+[Pipeline] { (Test)
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] stage
+[Pipeline] { (Deploy)
+Stage "Hello World!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Jenkins!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+Stage "Hello Devops!" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] }
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] }
+[Pipeline] }
+[Pipeline] // parallel
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+Finished: SUCCESS
