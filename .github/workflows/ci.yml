@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ Lesson28, main ]
+    branches: [ lesson28, main ]
   pull_request:
-    branches: [ main, Lesson28 ]
+    branches: [ main, lesson28 ]
   workflow_dispatch:
 
 env:
@@ -33,13 +33,13 @@ jobs:
     name: ${{ matrix.app }}
 
     steps:
-      - name: Checkout Lesson28 (workflow + Dockerfiles)
+      - name: Checkout lesson28 (workflow + Dockerfiles)
         uses: actions/checkout@v5
 
-      - name: Checkout Lesson26 (applications)
+      - name: Checkout lesson26 (applications)
         uses: actions/checkout@v5
         with:
-          ref: Lesson26
+          ref: lesson26
           path: src
 
       - name: Set up JDK 17
