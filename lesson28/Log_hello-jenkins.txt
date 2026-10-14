@@ -1,0 +1,949 @@
+2026-10-14T16:55:15.2628034Z Current runner version: '2.337.0'
+2026-10-14T16:55:15.2657179Z ##[group]Runner Image Provisioner
+2026-10-14T16:55:15.2658468Z Hosted Compute Agent
+2026-10-14T16:55:15.2659121Z Version: 20261012.601
+2026-10-14T16:55:15.2659802Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-14T16:55:15.2660604Z Build Date: 2026-10-12T17:48:21Z
+2026-10-14T16:55:15.2661287Z Worker ID: {c2c199a3-aec4-4355-9cd8-63aa2cdf0c56}
+2026-10-14T16:55:15.2661998Z Region: eastus2
+2026-10-14T16:55:15.2662628Z Cloud: Azure
+2026-10-14T16:55:15.2663204Z ##[endgroup]
+2026-10-14T16:55:15.2665203Z ##[group]Operating System
+2026-10-14T16:55:15.2666079Z Ubuntu
+2026-10-14T16:55:15.2666595Z 24.04.5
+2026-10-14T16:55:15.2667189Z LTS
+2026-10-14T16:55:15.2667741Z ##[endgroup]
+2026-10-14T16:55:15.2668345Z ##[group]Runner Image
+2026-10-14T16:55:15.2668958Z Image: ubuntu-24.04
+2026-10-14T16:55:15.2669528Z Version: 20261012.334.1
+2026-10-14T16:55:15.2670921Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-14T16:55:15.2672573Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-14T16:55:15.2673574Z ##[endgroup]
+2026-10-14T16:55:15.2674849Z ##[group]GITHUB_TOKEN Permissions
+2026-10-14T16:55:15.2677541Z Contents: read
+2026-10-14T16:55:15.2678159Z Metadata: read
+2026-10-14T16:55:15.2678841Z Packages: write
+2026-10-14T16:55:15.2679459Z ##[endgroup]
+2026-10-14T16:55:15.2681706Z Secret source: Actions
+2026-10-14T16:55:15.2682691Z Cache mode: write
+2026-10-14T16:55:15.2683753Z Prepare workflow directory
+2026-10-14T16:55:15.3248699Z Prepare all required actions
+2026-10-14T16:55:15.3301468Z Getting action download info
+2026-10-14T16:55:15.5814427Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+2026-10-14T16:55:15.6925545Z Download action repository 'actions/setup-java@v5' (SHA:b6effb05e454b25005698d916606bdc6ffcbf961)
+2026-10-14T16:55:15.9990383Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-14T16:55:16.1158146Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+2026-10-14T16:55:16.5335582Z Download action repository 'docker/metadata-action@v5' (SHA:c299e40c65443455700f0fdfc63efafe5b349051)
+2026-10-14T16:55:16.8580221Z Download action repository 'docker/build-push-action@v5' (SHA:ca052bb54ab0790a636c9b5f226502c73d547a25)
+2026-10-14T16:55:17.2877235Z Complete job name: hello-jenkins
+2026-10-14T16:55:17.3881478Z ##[group]Run actions/checkout@v5
+2026-10-14T16:55:17.3883005Z with:
+2026-10-14T16:55:17.3883888Z   repository: AVIgo89/codeby-devops
+2026-10-14T16:55:17.3893581Z   token: ***
+2026-10-14T16:55:17.3894420Z   ssh-strict: true
+2026-10-14T16:55:17.3895267Z   ssh-user: git
+2026-10-14T16:55:17.3896300Z   persist-credentials: true
+2026-10-14T16:55:17.3897258Z   clean: true
+2026-10-14T16:55:17.3898150Z   sparse-checkout-cone-mode: true
+2026-10-14T16:55:17.3899191Z   fetch-depth: 1
+2026-10-14T16:55:17.3900099Z   fetch-tags: false
+2026-10-14T16:55:17.3900978Z   show-progress: true
+2026-10-14T16:55:17.3901849Z   lfs: false
+2026-10-14T16:55:17.3902658Z   submodules: false
+2026-10-14T16:55:17.3903551Z   set-safe-directory: true
+2026-10-14T16:55:17.3904558Z   allow-unsafe-pr-checkout: false
+2026-10-14T16:55:17.3906173Z env:
+2026-10-14T16:55:17.3906976Z   REGISTRY: ghcr.io
+2026-10-14T16:55:17.3907912Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:17.3908960Z ##[endgroup]
+2026-10-14T16:55:17.5020356Z Syncing repository: AVIgo89/codeby-devops
+2026-10-14T16:55:17.5024314Z ##[group]Getting Git version info
+2026-10-14T16:55:17.5027017Z Working directory is '/home/runner/work/codeby-devops/codeby-devops'
+2026-10-14T16:55:17.5029327Z [command]/usr/bin/git version
+2026-10-14T16:55:17.5112861Z git version 2.55.0
+2026-10-14T16:55:17.5140426Z ##[endgroup]
+2026-10-14T16:55:17.5159911Z Temporarily overriding HOME='/home/runner/work/_temp/737de128-a320-4614-91c3-43fb8699a14a' before making global git config changes
+2026-10-14T16:55:17.5163477Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-14T16:55:17.5167546Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops
+2026-10-14T16:55:17.5223365Z Deleting the contents of '/home/runner/work/codeby-devops/codeby-devops'
+2026-10-14T16:55:17.5227718Z ##[group]Initializing the repository
+2026-10-14T16:55:17.5232012Z [command]/usr/bin/git init /home/runner/work/codeby-devops/codeby-devops
+2026-10-14T16:55:17.5346034Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-14T16:55:17.5350195Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-14T16:55:17.5353421Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-14T16:55:17.5356125Z hint: call:
+2026-10-14T16:55:17.5357424Z hint:
+2026-10-14T16:55:17.5359128Z hint: 	git config --global init.defaultBranch <name>
+2026-10-14T16:55:17.5361202Z hint:
+2026-10-14T16:55:17.5363095Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-14T16:55:17.5366507Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-14T16:55:17.5369199Z hint:
+2026-10-14T16:55:17.5370571Z hint: 	git branch -m <name>
+2026-10-14T16:55:17.5372124Z hint:
+2026-10-14T16:55:17.5374239Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-14T16:55:17.5378087Z Initialized empty Git repository in /home/runner/work/codeby-devops/codeby-devops/.git/
+2026-10-14T16:55:17.5383806Z [command]/usr/bin/git remote add origin https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:17.5416740Z ##[endgroup]
+2026-10-14T16:55:17.5419254Z ##[group]Disabling automatic garbage collection
+2026-10-14T16:55:17.5421460Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-14T16:55:17.5455345Z ##[endgroup]
+2026-10-14T16:55:17.5458098Z ##[group]Setting up auth
+2026-10-14T16:55:17.5463146Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-14T16:55:17.5501799Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-14T16:55:17.5900295Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-14T16:55:17.5949168Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-14T16:55:17.6183641Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-14T16:55:17.6224830Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-14T16:55:17.6458505Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-14T16:55:17.6501471Z ##[endgroup]
+2026-10-14T16:55:17.6503055Z ##[group]Fetching the repository
+2026-10-14T16:55:17.6514734Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1a388803ada2d8714bc530c510857fa2db783df4:refs/remotes/origin/lesson28
+2026-10-14T16:55:17.9054660Z From https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:17.9057355Z  * [new ref]         1a388803ada2d8714bc530c510857fa2db783df4 -> origin/lesson28
+2026-10-14T16:55:17.9061573Z ##[endgroup]
+2026-10-14T16:55:17.9063814Z ##[group]Determining the checkout info
+2026-10-14T16:55:17.9065592Z ##[endgroup]
+2026-10-14T16:55:17.9069880Z [command]/usr/bin/git sparse-checkout disable
+2026-10-14T16:55:17.9128398Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-14T16:55:17.9163713Z ##[group]Checking out the ref
+2026-10-14T16:55:17.9168985Z [command]/usr/bin/git checkout --progress --force -B lesson28 refs/remotes/origin/lesson28
+2026-10-14T16:55:17.9232769Z Switched to a new branch 'lesson28'
+2026-10-14T16:55:17.9239501Z branch 'lesson28' set up to track 'origin/lesson28'.
+2026-10-14T16:55:17.9284890Z ##[endgroup]
+2026-10-14T16:55:17.9288446Z [command]/usr/bin/git log -1 --format=%H
+2026-10-14T16:55:17.9316017Z 1a388803ada2d8714bc530c510857fa2db783df4
+2026-10-14T16:55:17.9706756Z ##[group]Run actions/checkout@v5
+2026-10-14T16:55:17.9707801Z with:
+2026-10-14T16:55:17.9708569Z   ref: lesson26
+2026-10-14T16:55:17.9709384Z   path: src
+2026-10-14T16:55:17.9710238Z   repository: AVIgo89/codeby-devops
+2026-10-14T16:55:17.9719743Z   token: ***
+2026-10-14T16:55:17.9720581Z   ssh-strict: true
+2026-10-14T16:55:17.9721417Z   ssh-user: git
+2026-10-14T16:55:17.9722279Z   persist-credentials: true
+2026-10-14T16:55:17.9723218Z   clean: true
+2026-10-14T16:55:17.9724085Z   sparse-checkout-cone-mode: true
+2026-10-14T16:55:17.9725093Z   fetch-depth: 1
+2026-10-14T16:55:17.9726072Z   fetch-tags: false
+2026-10-14T16:55:17.9726955Z   show-progress: true
+2026-10-14T16:55:17.9727815Z   lfs: false
+2026-10-14T16:55:17.9728616Z   submodules: false
+2026-10-14T16:55:17.9729488Z   set-safe-directory: true
+2026-10-14T16:55:17.9730481Z   allow-unsafe-pr-checkout: false
+2026-10-14T16:55:17.9731465Z env:
+2026-10-14T16:55:17.9732225Z   REGISTRY: ghcr.io
+2026-10-14T16:55:17.9733174Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:17.9734197Z ##[endgroup]
+2026-10-14T16:55:18.0647011Z Syncing repository: AVIgo89/codeby-devops
+2026-10-14T16:55:18.0665542Z ##[group]Getting Git version info
+2026-10-14T16:55:18.0668207Z Working directory is '/home/runner/work/codeby-devops/codeby-devops/src'
+2026-10-14T16:55:18.0709423Z [command]/usr/bin/git version
+2026-10-14T16:55:18.0755426Z git version 2.55.0
+2026-10-14T16:55:18.0778620Z ##[endgroup]
+2026-10-14T16:55:18.0793749Z Temporarily overriding HOME='/home/runner/work/_temp/0dff7d5b-633a-4703-8c9f-18204c05ba00' before making global git config changes
+2026-10-14T16:55:18.0798894Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-14T16:55:18.0803442Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops/src
+2026-10-14T16:55:18.0836054Z ##[group]Initializing the repository
+2026-10-14T16:55:18.0841706Z [command]/usr/bin/git init /home/runner/work/codeby-devops/codeby-devops/src
+2026-10-14T16:55:18.0890240Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-14T16:55:18.0893758Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-14T16:55:18.0897577Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-14T16:55:18.0900478Z hint: call:
+2026-10-14T16:55:18.0902161Z hint:
+2026-10-14T16:55:18.0904169Z hint: 	git config --global init.defaultBranch <name>
+2026-10-14T16:55:18.0906866Z hint:
+2026-10-14T16:55:18.0909188Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-14T16:55:18.0912866Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-14T16:55:18.0915561Z hint:
+2026-10-14T16:55:18.0917293Z hint: 	git branch -m <name>
+2026-10-14T16:55:18.0919044Z hint:
+2026-10-14T16:55:18.0921362Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-14T16:55:18.0925323Z Initialized empty Git repository in /home/runner/work/codeby-devops/codeby-devops/src/.git/
+2026-10-14T16:55:18.0931936Z [command]/usr/bin/git remote add origin https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:18.0977187Z ##[endgroup]
+2026-10-14T16:55:18.0979704Z ##[group]Disabling automatic garbage collection
+2026-10-14T16:55:18.0982286Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-14T16:55:18.1020655Z ##[endgroup]
+2026-10-14T16:55:18.1023158Z ##[group]Setting up auth
+2026-10-14T16:55:18.1029740Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-14T16:55:18.1070794Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-14T16:55:18.1334025Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-14T16:55:18.1387096Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-14T16:55:18.1741527Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-14T16:55:18.1775954Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-14T16:55:18.2016646Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-14T16:55:18.2060552Z ##[endgroup]
+2026-10-14T16:55:18.2062051Z ##[group]Fetching the repository
+2026-10-14T16:55:18.2071367Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/lesson26*:refs/remotes/origin/lesson26* +refs/tags/lesson26*:refs/tags/lesson26*
+2026-10-14T16:55:18.5452163Z From https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:18.5453694Z  * [new branch]      lesson26   -> origin/lesson26
+2026-10-14T16:55:18.5457442Z ##[endgroup]
+2026-10-14T16:55:18.5458995Z ##[group]Determining the checkout info
+2026-10-14T16:55:18.5466653Z [command]/usr/bin/git branch --list --remote origin/lesson26
+2026-10-14T16:55:18.5497091Z   origin/lesson26
+2026-10-14T16:55:18.5503103Z ##[endgroup]
+2026-10-14T16:55:18.5508175Z [command]/usr/bin/git sparse-checkout disable
+2026-10-14T16:55:18.5558714Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-14T16:55:18.5597568Z ##[group]Checking out the ref
+2026-10-14T16:55:18.5601358Z [command]/usr/bin/git checkout --progress --force -B lesson26 refs/remotes/origin/lesson26
+2026-10-14T16:55:18.5686299Z Switched to a new branch 'lesson26'
+2026-10-14T16:55:18.5689766Z branch 'lesson26' set up to track 'origin/lesson26'.
+2026-10-14T16:55:18.5697322Z ##[endgroup]
+2026-10-14T16:55:18.5742784Z [command]/usr/bin/git log -1 --format=%H
+2026-10-14T16:55:18.5774065Z cf443e10a9f0b0d65cc5f852a1d6b671e302d21d
+2026-10-14T16:55:18.6147811Z ##[group]Run actions/setup-java@v5
+2026-10-14T16:55:18.6148867Z with:
+2026-10-14T16:55:18.6149635Z   distribution: temurin
+2026-10-14T16:55:18.6150498Z   java-version: 21
+2026-10-14T16:55:18.6151297Z   cache: maven
+2026-10-14T16:55:18.6152233Z   cache-dependency-path: src/hello-jenkins/pom.xml
+2026-10-14T16:55:18.6153391Z   java-package: jdk
+2026-10-14T16:55:18.6154218Z   check-latest: false
+2026-10-14T16:55:18.6155067Z   set-default: true
+2026-10-14T16:55:18.6156067Z   verify-signature: false
+2026-10-14T16:55:18.6156961Z   server-id: github
+2026-10-14T16:55:18.6157815Z   server-username: GITHUB_ACTOR
+2026-10-14T16:55:18.6158792Z   server-password: GITHUB_TOKEN
+2026-10-14T16:55:18.6159777Z   overwrite-settings: true
+2026-10-14T16:55:18.6160682Z   job-status: success
+2026-10-14T16:55:18.6169872Z   token: ***
+2026-10-14T16:55:18.6170728Z   show-download-progress: false
+2026-10-14T16:55:18.6171661Z env:
+2026-10-14T16:55:18.6172394Z   REGISTRY: ghcr.io
+2026-10-14T16:55:18.6173314Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:18.6174304Z ##[endgroup]
+2026-10-14T16:55:18.7744406Z ##[group]Installed distributions
+2026-10-14T16:55:18.7975771Z Resolved Java 21.0.12+1 from tool-cache
+2026-10-14T16:55:18.7977286Z Setting Java 21.0.12+1 as the default
+2026-10-14T16:55:18.7994092Z Creating toolchains.xml for JDK version 21 from temurin
+2026-10-14T16:55:18.8117386Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-14T16:55:18.8119443Z 
+2026-10-14T16:55:18.8120450Z Java configuration:
+2026-10-14T16:55:18.8122101Z   Distribution: temurin
+2026-10-14T16:55:18.8123885Z   Version: 21.0.12+1
+2026-10-14T16:55:18.8126158Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:18.8128271Z 
+2026-10-14T16:55:18.8130060Z ##[endgroup]
+2026-10-14T16:55:18.8166488Z Creating settings.xml with server-id: github
+2026-10-14T16:55:18.8168851Z Writing to /home/runner/.m2/settings.xml
+2026-10-14T16:55:18.8173018Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+2026-10-14T16:55:18.9225090Z Cache hit for: setup-java-Linux-x64-maven-4de7e2e1a8dbfd83ab63ce29f6a153e7dd797816605000abfc5727972b10464d
+2026-10-14T16:55:19.2162269Z Received 20026726 of 20026726 (100.0%), 82.7 MBs/sec
+2026-10-14T16:55:19.2164343Z Cache Size: ~19 MB (20026726 B)
+2026-10-14T16:55:19.2198949Z [command]/usr/bin/tar -xf /home/runner/work/_temp/0ecd3da2-be77-4331-9991-9866d5d305f0/cache.tzst -P -C /home/runner/work/codeby-devops/codeby-devops --use-compress-program unzstd
+2026-10-14T16:55:19.2949619Z Cache restored successfully
+2026-10-14T16:55:19.2963370Z Cache restored from key: setup-java-Linux-x64-maven-4de7e2e1a8dbfd83ab63ce29f6a153e7dd797816605000abfc5727972b10464d
+2026-10-14T16:55:19.3549848Z ##[group]Run mvn -B -DskipTests clean package
+2026-10-14T16:55:19.3550408Z [36;1mmvn -B -DskipTests clean package[0m
+2026-10-14T16:55:19.3836655Z shell: /usr/bin/bash -e {0}
+2026-10-14T16:55:19.3837083Z env:
+2026-10-14T16:55:19.3837365Z   REGISTRY: ghcr.io
+2026-10-14T16:55:19.3837693Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:19.3838181Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:19.3838783Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:19.3839304Z   MAVEN_ARGS: -ntp
+2026-10-14T16:55:19.3839605Z ##[endgroup]
+2026-10-14T16:55:24.7213280Z [INFO] Scanning for projects...
+2026-10-14T16:55:24.8711243Z [INFO] 
+2026-10-14T16:55:24.8712798Z [INFO] ----------------------< com.mycompany.app:my-app >----------------------
+2026-10-14T16:55:24.8715324Z [INFO] Building my-app 1.0-SNAPSHOT
+2026-10-14T16:55:24.8746273Z [INFO]   from pom.xml
+2026-10-14T16:55:24.8747319Z [INFO] --------------------------------[ jar ]---------------------------------
+2026-10-14T16:55:25.0798741Z [INFO] Loaded 24086 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+2026-10-14T16:55:25.3254699Z [INFO] 
+2026-10-14T16:55:25.3266794Z [INFO] --- clean:3.5.0:clean (default-clean) @ my-app ---
+2026-10-14T16:55:25.4283677Z [INFO] 
+2026-10-14T16:55:25.4284780Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ my-app ---
+2026-10-14T16:55:25.6133744Z [INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+2026-10-14T16:55:25.6342011Z [INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+2026-10-14T16:55:25.6344672Z [INFO] 
+2026-10-14T16:55:25.6353316Z [INFO] --- resources:3.5.0:resources (default-resources) @ my-app ---
+2026-10-14T16:55:25.7337758Z [INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-jenkins/src/main/resources
+2026-10-14T16:55:25.7342965Z [INFO] 
+2026-10-14T16:55:25.7366743Z [INFO] --- compiler:3.16.0:compile (default-compile) @ my-app ---
+2026-10-14T16:55:25.7617405Z [INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+2026-10-14T16:55:27.4033511Z [INFO] Recompiling the module because of changed source code.
+2026-10-14T16:55:27.4098485Z [INFO] Compiling 1 source file with javac [debug release 21] to target/classes
+2026-10-14T16:55:28.2557256Z [INFO] 
+2026-10-14T16:55:28.2571400Z [INFO] --- resources:3.5.0:testResources (default-testResources) @ my-app ---
+2026-10-14T16:55:28.2596589Z [INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-jenkins/src/test/resources
+2026-10-14T16:55:28.2598003Z [INFO] 
+2026-10-14T16:55:28.2598682Z [INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ my-app ---
+2026-10-14T16:55:28.2752150Z [INFO] Recompiling the module because of changed dependency.
+2026-10-14T16:55:28.2762139Z [INFO] Compiling 1 source file with javac [debug release 21] to target/test-classes
+2026-10-14T16:55:28.4129406Z [INFO] 
+2026-10-14T16:55:28.4159684Z [INFO] --- surefire:3.6.0:test (default-test) @ my-app ---
+2026-10-14T16:55:28.5737013Z [INFO] Tests are skipped.
+2026-10-14T16:55:28.5778080Z [INFO] 
+2026-10-14T16:55:28.5843426Z [INFO] --- jar:3.5.1:jar (default-jar) @ my-app ---
+2026-10-14T16:55:28.8997687Z [INFO] Building jar: /home/runner/work/codeby-devops/codeby-devops/src/hello-jenkins/target/my-app-1.0-SNAPSHOT.jar
+2026-10-14T16:55:28.9479930Z [INFO] ------------------------------------------------------------------------
+2026-10-14T16:55:28.9480882Z [INFO] BUILD SUCCESS
+2026-10-14T16:55:28.9483464Z [INFO] ------------------------------------------------------------------------
+2026-10-14T16:55:28.9484467Z [INFO] Total time:  4.293 s
+2026-10-14T16:55:28.9507537Z [INFO] Finished at: 2026-10-14T16:55:28Z
+2026-10-14T16:55:28.9516938Z [INFO] ------------------------------------------------------------------------
+2026-10-14T16:55:29.0259069Z ##[group]Run mvn -B test
+2026-10-14T16:55:29.0259388Z [36;1mmvn -B test[0m
+2026-10-14T16:55:29.0329341Z shell: /usr/bin/bash -e {0}
+2026-10-14T16:55:29.0329631Z env:
+2026-10-14T16:55:29.0329852Z   REGISTRY: ghcr.io
+2026-10-14T16:55:29.0330114Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:29.0330544Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:29.0331090Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:29.0331520Z   MAVEN_ARGS: -ntp
+2026-10-14T16:55:29.0331753Z ##[endgroup]
+2026-10-14T16:55:30.3451834Z [INFO] Scanning for projects...
+2026-10-14T16:55:30.3996940Z [INFO] 
+2026-10-14T16:55:30.4007929Z [INFO] ----------------------< com.mycompany.app:my-app >----------------------
+2026-10-14T16:55:30.4012779Z [INFO] Building my-app 1.0-SNAPSHOT
+2026-10-14T16:55:30.4026676Z [INFO]   from pom.xml
+2026-10-14T16:55:30.4027564Z [INFO] --------------------------------[ jar ]---------------------------------
+2026-10-14T16:55:30.5513483Z [INFO] Loaded 24086 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+2026-10-14T16:55:30.7586768Z [INFO] 
+2026-10-14T16:55:30.7587764Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ my-app ---
+2026-10-14T16:55:30.9652700Z [INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+2026-10-14T16:55:30.9810652Z [INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+2026-10-14T16:55:30.9813820Z [INFO] 
+2026-10-14T16:55:30.9815339Z [INFO] --- resources:3.5.0:resources (default-resources) @ my-app ---
+2026-10-14T16:55:31.0825026Z [INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-jenkins/src/main/resources
+2026-10-14T16:55:31.0836628Z [INFO] 
+2026-10-14T16:55:31.0837180Z [INFO] --- compiler:3.16.0:compile (default-compile) @ my-app ---
+2026-10-14T16:55:31.1157449Z [INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+2026-10-14T16:55:32.0462901Z [INFO] Nothing to compile - all classes are up to date.
+2026-10-14T16:55:32.0466444Z [INFO] 
+2026-10-14T16:55:32.0467754Z [INFO] --- resources:3.5.0:testResources (default-testResources) @ my-app ---
+2026-10-14T16:55:32.0499061Z [INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-jenkins/src/test/resources
+2026-10-14T16:55:32.0499986Z [INFO] 
+2026-10-14T16:55:32.0510945Z [INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ my-app ---
+2026-10-14T16:55:32.0647930Z [INFO] Nothing to compile - all classes are up to date.
+2026-10-14T16:55:32.0661659Z [INFO] 
+2026-10-14T16:55:32.0662351Z [INFO] --- surefire:3.6.0:test (default-test) @ my-app ---
+2026-10-14T16:55:32.2207776Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+2026-10-14T16:55:32.3107108Z [INFO] 
+2026-10-14T16:55:32.3109504Z [INFO] -------------------------------------------------------
+2026-10-14T16:55:32.3110997Z [INFO]  T E S T S
+2026-10-14T16:55:32.3114774Z [INFO] -------------------------------------------------------
+2026-10-14T16:55:33.2194913Z [INFO] Running com.mycompany.app.AppTest
+2026-10-14T16:55:33.3075560Z [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in com.mycompany.app.AppTest
+2026-10-14T16:55:33.3356957Z [INFO] 
+2026-10-14T16:55:33.3357768Z [INFO] Results:
+2026-10-14T16:55:33.3358334Z [INFO] 
+2026-10-14T16:55:33.3364465Z [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+2026-10-14T16:55:33.3367290Z [INFO] 
+2026-10-14T16:55:33.3393338Z [INFO] ------------------------------------------------------------------------
+2026-10-14T16:55:33.3394370Z [INFO] BUILD SUCCESS
+2026-10-14T16:55:33.3394724Z [INFO] ------------------------------------------------------------------------
+2026-10-14T16:55:33.3397397Z [INFO] Total time:  3.033 s
+2026-10-14T16:55:33.3400080Z [INFO] Finished at: 2026-10-14T16:55:33Z
+2026-10-14T16:55:33.3401294Z [INFO] ------------------------------------------------------------------------
+2026-10-14T16:55:33.3644042Z ##[group]Run actions/upload-artifact@v4
+2026-10-14T16:55:33.3644376Z with:
+2026-10-14T16:55:33.3644607Z   name: hello-jenkins-test-reports
+2026-10-14T16:55:33.3644936Z   path: src/hello-jenkins/target/surefire-reports/
+2026-10-14T16:55:33.3645248Z   retention-days: 7
+2026-10-14T16:55:33.3645470Z   if-no-files-found: warn
+2026-10-14T16:55:33.3646025Z   compression-level: 6
+2026-10-14T16:55:33.3646246Z   overwrite: false
+2026-10-14T16:55:33.3646462Z   include-hidden-files: false
+2026-10-14T16:55:33.3646718Z env:
+2026-10-14T16:55:33.3646900Z   REGISTRY: ghcr.io
+2026-10-14T16:55:33.3647146Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:33.3647529Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:33.3648028Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:33.3648419Z   MAVEN_ARGS: -ntp
+2026-10-14T16:55:33.3648642Z ##[endgroup]
+2026-10-14T16:55:33.5376462Z (node:2666) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T16:55:33.5377731Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T16:55:33.5486490Z With the provided path, there will be 2 files uploaded
+2026-10-14T16:55:33.5506736Z Artifact name is valid!
+2026-10-14T16:55:33.5507216Z Root directory input is valid!
+2026-10-14T16:55:33.8029291Z Beginning upload of artifact content to blob storage
+2026-10-14T16:55:33.8252040Z (node:2666) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-14T16:55:33.8758764Z Uploaded bytes 1729
+2026-10-14T16:55:33.8969235Z Finished uploading artifact content to blob storage!
+2026-10-14T16:55:33.8971047Z SHA256 digest of uploaded artifact zip is 0c79709024632447ac2d1838d3b85b36b0e16cebf063570e8c7c89889c86d740
+2026-10-14T16:55:33.8972787Z Finalizing artifact upload
+2026-10-14T16:55:34.1511267Z Artifact hello-jenkins-test-reports.zip successfully finalized. Artifact ID 11914800304
+2026-10-14T16:55:34.1513143Z Artifact hello-jenkins-test-reports has been successfully uploaded! Final size is 1729 bytes. Artifact ID is 11914800304
+2026-10-14T16:55:34.1520744Z Artifact download URL: https://github.com/AVIgo89/codeby-devops/actions/runs/38602172149/artifacts/11914800304
+2026-10-14T16:55:34.1685300Z ##[group]Run actions/upload-artifact@v4
+2026-10-14T16:55:34.1685938Z with:
+2026-10-14T16:55:34.1686205Z   name: hello-jenkins-jar
+2026-10-14T16:55:34.1686482Z   path: src/hello-jenkins/target/*.jar
+2026-10-14T16:55:34.1686765Z   retention-days: 7
+2026-10-14T16:55:34.1686994Z   if-no-files-found: warn
+2026-10-14T16:55:34.1687236Z   compression-level: 6
+2026-10-14T16:55:34.1687460Z   overwrite: false
+2026-10-14T16:55:34.1687686Z   include-hidden-files: false
+2026-10-14T16:55:34.1688232Z env:
+2026-10-14T16:55:34.1688423Z   REGISTRY: ghcr.io
+2026-10-14T16:55:34.1688669Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:34.1689053Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:34.1689549Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:34.1689950Z   MAVEN_ARGS: -ntp
+2026-10-14T16:55:34.1690160Z ##[endgroup]
+2026-10-14T16:55:34.3428804Z (node:2678) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T16:55:34.3429572Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T16:55:34.3496784Z With the provided path, there will be 1 file uploaded
+2026-10-14T16:55:34.3504114Z Artifact name is valid!
+2026-10-14T16:55:34.3504734Z Root directory input is valid!
+2026-10-14T16:55:34.6031022Z Beginning upload of artifact content to blob storage
+2026-10-14T16:55:34.6236487Z (node:2678) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-14T16:55:34.6683696Z Uploaded bytes 1910
+2026-10-14T16:55:34.6894169Z Finished uploading artifact content to blob storage!
+2026-10-14T16:55:34.6895348Z SHA256 digest of uploaded artifact zip is b05e07d026757d29880c54223a87d557820b2a22bf62921cc72db24e3eaa5799
+2026-10-14T16:55:34.6897355Z Finalizing artifact upload
+2026-10-14T16:55:34.9729768Z Artifact hello-jenkins-jar.zip successfully finalized. Artifact ID 11915000077
+2026-10-14T16:55:34.9731291Z Artifact hello-jenkins-jar has been successfully uploaded! Final size is 1910 bytes. Artifact ID is 11915000077
+2026-10-14T16:55:34.9738549Z Artifact download URL: https://github.com/AVIgo89/codeby-devops/actions/runs/38602172149/artifacts/11915000077
+2026-10-14T16:55:34.9897442Z ##[group]Run docker/login-action@v3
+2026-10-14T16:55:34.9897774Z with:
+2026-10-14T16:55:34.9897986Z   registry: ghcr.io
+2026-10-14T16:55:34.9898213Z   username: AVIgo89
+2026-10-14T16:55:34.9901202Z   password: ***
+2026-10-14T16:55:34.9901442Z   logout: true
+2026-10-14T16:55:34.9901649Z env:
+2026-10-14T16:55:34.9901850Z   REGISTRY: ghcr.io
+2026-10-14T16:55:34.9902090Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:34.9902489Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:34.9902992Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:34.9903398Z   MAVEN_ARGS: -ntp
+2026-10-14T16:55:34.9903616Z ##[endgroup]
+2026-10-14T16:55:35.3195289Z Logging into ghcr.io...
+2026-10-14T16:55:35.3220737Z (node:2690) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T16:55:35.3222217Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T16:55:35.6402964Z Login Succeeded!
+2026-10-14T16:55:35.6573264Z ##[group]Run docker/metadata-action@v5
+2026-10-14T16:55:35.6573585Z with:
+2026-10-14T16:55:35.6573863Z   images: ghcr.io/AVIgo89/codeby-devops-hello-jenkins
+2026-10-14T16:55:35.6574394Z   tags: type=ref,event=branch
+type=sha,prefix=sha-
+type=raw,value=latest,enable={{is_default_branch}}
+
+2026-10-14T16:55:35.6574874Z   context: workflow
+2026-10-14T16:55:35.6577921Z   github-token: ***
+2026-10-14T16:55:35.6578153Z env:
+2026-10-14T16:55:35.6578354Z   REGISTRY: ghcr.io
+2026-10-14T16:55:35.6578599Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:35.6578994Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:35.6579515Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:35.6579913Z   MAVEN_ARGS: -ntp
+2026-10-14T16:55:35.6580142Z ##[endgroup]
+2026-10-14T16:55:36.0595399Z (node:2710) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T16:55:36.0597021Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T16:55:36.3704205Z ##[group]Context info
+2026-10-14T16:55:36.3704971Z eventName: push
+2026-10-14T16:55:36.3705923Z sha: 1a388803ada2d8714bc530c510857fa2db783df4
+2026-10-14T16:55:36.3706747Z ref: refs/heads/lesson28
+2026-10-14T16:55:36.3707369Z workflow: CI
+2026-10-14T16:55:36.3707918Z action: meta
+2026-10-14T16:55:36.3708457Z actor: AVIgo89
+2026-10-14T16:55:36.3709010Z runNumber: 7
+2026-10-14T16:55:36.3709637Z runId: 38602172149
+2026-10-14T16:55:36.3710535Z commitDate: Wed Oct 14 2026 16:55:09 GMT+0000 (Coordinated Universal Time)
+2026-10-14T16:55:36.3713002Z ##[endgroup]
+2026-10-14T16:55:36.3722468Z ##[group]Processing images input
+2026-10-14T16:55:36.3723147Z name=ghcr.io/AVIgo89/codeby-devops-hello-jenkins,enable=true
+2026-10-14T16:55:36.3724061Z ##[endgroup]
+2026-10-14T16:55:36.3738771Z ##[group]Processing tags input
+2026-10-14T16:55:36.3739446Z type=ref,event=branch,enable=true,priority=600
+2026-10-14T16:55:36.3740216Z type=raw,value=latest,enable={{is_default_branch}},priority=200
+2026-10-14T16:55:36.3741100Z type=sha,prefix=sha-,format=short,enable=true,priority=100
+2026-10-14T16:55:36.3742109Z ##[endgroup]
+2026-10-14T16:55:36.3742841Z ##[group]Processing flavor input
+2026-10-14T16:55:36.3743390Z latest=auto
+2026-10-14T16:55:36.3743731Z prefix=
+2026-10-14T16:55:36.3744124Z prefixLatest=false
+2026-10-14T16:55:36.3744520Z suffix=
+2026-10-14T16:55:36.3744878Z suffixLatest=false
+2026-10-14T16:55:36.3745599Z ##[endgroup]
+2026-10-14T16:55:36.3812838Z ##[group]Docker image version
+2026-10-14T16:55:36.3813396Z lesson28
+2026-10-14T16:55:36.3814006Z ##[endgroup]
+2026-10-14T16:55:36.3818600Z ##[group]Docker tags
+2026-10-14T16:55:36.3819169Z ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28
+2026-10-14T16:55:36.3819898Z ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880
+2026-10-14T16:55:36.3820764Z ##[endgroup]
+2026-10-14T16:55:36.3897143Z ##[group]Docker labels
+2026-10-14T16:55:36.3897835Z org.opencontainers.image.created=2026-10-14T16:55:36.374Z
+2026-10-14T16:55:36.3899574Z org.opencontainers.image.description=
+2026-10-14T16:55:36.3900115Z org.opencontainers.image.licenses=
+2026-10-14T16:55:36.3900830Z org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4
+2026-10-14T16:55:36.3901776Z org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:36.3902557Z org.opencontainers.image.title=codeby-devops
+2026-10-14T16:55:36.3903285Z org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:36.3904026Z org.opencontainers.image.version=lesson28
+2026-10-14T16:55:36.3904947Z ##[endgroup]
+2026-10-14T16:55:36.3905565Z ##[group]Annotations
+2026-10-14T16:55:36.3906508Z manifest:org.opencontainers.image.created=2026-10-14T16:55:36.374Z
+2026-10-14T16:55:36.3907239Z manifest:org.opencontainers.image.description=
+2026-10-14T16:55:36.3907871Z manifest:org.opencontainers.image.licenses=
+2026-10-14T16:55:36.3909115Z manifest:org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4
+2026-10-14T16:55:36.3910300Z manifest:org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:36.3911276Z manifest:org.opencontainers.image.title=codeby-devops
+2026-10-14T16:55:36.3912141Z manifest:org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops
+2026-10-14T16:55:36.3913070Z manifest:org.opencontainers.image.version=lesson28
+2026-10-14T16:55:36.3913878Z ##[endgroup]
+2026-10-14T16:55:36.3914477Z ##[group]JSON output
+2026-10-14T16:55:36.3914954Z {
+2026-10-14T16:55:36.3916055Z   "tags": [
+2026-10-14T16:55:36.3916975Z     "ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28",
+2026-10-14T16:55:36.3917854Z     "ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880"
+2026-10-14T16:55:36.3918544Z   ],
+2026-10-14T16:55:36.3918989Z   "tag-names": [
+2026-10-14T16:55:36.3919449Z     "lesson28",
+2026-10-14T16:55:36.3919880Z     "sha-1a38880"
+2026-10-14T16:55:36.3920269Z   ],
+2026-10-14T16:55:36.3920652Z   "labels": {
+2026-10-14T16:55:36.3922907Z     "org.opencontainers.image.created": "2026-10-14T16:55:36.374Z",
+2026-10-14T16:55:36.3923835Z     "org.opencontainers.image.description": "",
+2026-10-14T16:55:36.3924564Z     "org.opencontainers.image.licenses": "",
+2026-10-14T16:55:36.3926692Z     "org.opencontainers.image.revision": "1a388803ada2d8714bc530c510857fa2db783df4",
+2026-10-14T16:55:36.3927898Z     "org.opencontainers.image.source": "https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3928785Z     "org.opencontainers.image.title": "codeby-devops",
+2026-10-14T16:55:36.3929585Z     "org.opencontainers.image.url": "https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3930316Z     "org.opencontainers.image.version": "lesson28"
+2026-10-14T16:55:36.3930796Z   },
+2026-10-14T16:55:36.3931099Z   "annotations": [
+2026-10-14T16:55:36.3931618Z     "manifest:org.opencontainers.image.created=2026-10-14T16:55:36.374Z",
+2026-10-14T16:55:36.3932328Z     "manifest:org.opencontainers.image.description=",
+2026-10-14T16:55:36.3932915Z     "manifest:org.opencontainers.image.licenses=",
+2026-10-14T16:55:36.3933716Z     "manifest:org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4",
+2026-10-14T16:55:36.3934837Z     "manifest:org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3936004Z     "manifest:org.opencontainers.image.title=codeby-devops",
+2026-10-14T16:55:36.3937307Z     "manifest:org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3938122Z     "manifest:org.opencontainers.image.version=lesson28"
+2026-10-14T16:55:36.3938676Z   ]
+2026-10-14T16:55:36.3938963Z }
+2026-10-14T16:55:36.3939665Z ##[endgroup]
+2026-10-14T16:55:36.3940307Z ##[group]Bake file definition (tags)
+2026-10-14T16:55:36.3940708Z {
+2026-10-14T16:55:36.3940992Z   "target": {
+2026-10-14T16:55:36.3941321Z     "docker-metadata-action": {
+2026-10-14T16:55:36.3941766Z       "tags": [
+2026-10-14T16:55:36.3942343Z         "ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28",
+2026-10-14T16:55:36.3943161Z         "ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880"
+2026-10-14T16:55:36.3943771Z       ],
+2026-10-14T16:55:36.3944161Z       "args": {
+2026-10-14T16:55:36.3944698Z         "DOCKER_META_IMAGES": "ghcr.io/avigo89/codeby-devops-hello-jenkins",
+2026-10-14T16:55:36.3945433Z         "DOCKER_META_VERSION": "lesson28"
+2026-10-14T16:55:36.3946131Z       }
+2026-10-14T16:55:36.3946478Z     }
+2026-10-14T16:55:36.3946818Z   }
+2026-10-14T16:55:36.3947115Z }
+2026-10-14T16:55:36.3947692Z ##[endgroup]
+2026-10-14T16:55:36.3948085Z ##[group]Bake file definition (labels)
+2026-10-14T16:55:36.3948357Z {
+2026-10-14T16:55:36.3948552Z   "target": {
+2026-10-14T16:55:36.3948782Z     "docker-metadata-action": {
+2026-10-14T16:55:36.3949049Z       "labels": {
+2026-10-14T16:55:36.3949364Z         "org.opencontainers.image.created": "2026-10-14T16:55:36.374Z",
+2026-10-14T16:55:36.3949836Z         "org.opencontainers.image.description": "",
+2026-10-14T16:55:36.3950439Z         "org.opencontainers.image.licenses": "",
+2026-10-14T16:55:36.3950921Z         "org.opencontainers.image.revision": "1a388803ada2d8714bc530c510857fa2db783df4",
+2026-10-14T16:55:36.3951502Z         "org.opencontainers.image.source": "https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3952012Z         "org.opencontainers.image.title": "codeby-devops",
+2026-10-14T16:55:36.3952491Z         "org.opencontainers.image.url": "https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3952959Z         "org.opencontainers.image.version": "lesson28"
+2026-10-14T16:55:36.3953268Z       }
+2026-10-14T16:55:36.3953453Z     }
+2026-10-14T16:55:36.3953641Z   }
+2026-10-14T16:55:36.3953822Z }
+2026-10-14T16:55:36.3954278Z ##[endgroup]
+2026-10-14T16:55:36.3954941Z ##[group]Bake file definition (annotations)
+2026-10-14T16:55:36.3955471Z {
+2026-10-14T16:55:36.3956018Z   "target": {
+2026-10-14T16:55:36.3956434Z     "docker-metadata-action": {
+2026-10-14T16:55:36.3956951Z       "annotations": [
+2026-10-14T16:55:36.3957603Z         "manifest:org.opencontainers.image.created=2026-10-14T16:55:36.374Z",
+2026-10-14T16:55:36.3958683Z         "manifest:org.opencontainers.image.description=",
+2026-10-14T16:55:36.3959401Z         "manifest:org.opencontainers.image.licenses=",
+2026-10-14T16:55:36.3960224Z         "manifest:org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4",
+2026-10-14T16:55:36.3961333Z         "manifest:org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3962275Z         "manifest:org.opencontainers.image.title=codeby-devops",
+2026-10-14T16:55:36.3963232Z         "manifest:org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:36.3964163Z         "manifest:org.opencontainers.image.version=lesson28"
+2026-10-14T16:55:36.3964796Z       ]
+2026-10-14T16:55:36.3965144Z     }
+2026-10-14T16:55:36.3965520Z   }
+2026-10-14T16:55:36.3966075Z }
+2026-10-14T16:55:36.3966747Z ##[endgroup]
+2026-10-14T16:55:36.4178656Z ##[group]Run docker/build-push-action@v5
+2026-10-14T16:55:36.4178993Z with:
+2026-10-14T16:55:36.4179205Z   context: src/hello-jenkins
+2026-10-14T16:55:36.4179484Z   file: lesson28/Dockerfile.hello-jenkins
+2026-10-14T16:55:36.4179775Z   push: true
+2026-10-14T16:55:36.4180267Z   tags: ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28
+ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880
+2026-10-14T16:55:36.4182287Z   labels: org.opencontainers.image.created=2026-10-14T16:55:36.374Z
+org.opencontainers.image.description=
+org.opencontainers.image.licenses=
+org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4
+org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops
+org.opencontainers.image.title=codeby-devops
+org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops
+org.opencontainers.image.version=lesson28
+2026-10-14T16:55:36.4184038Z   load: false
+2026-10-14T16:55:36.4184245Z   no-cache: false
+2026-10-14T16:55:36.4184483Z   pull: false
+2026-10-14T16:55:36.4187571Z   github-token: ***
+2026-10-14T16:55:36.4187814Z env:
+2026-10-14T16:55:36.4188004Z   REGISTRY: ghcr.io
+2026-10-14T16:55:36.4188247Z   IMAGE_PREFIX: AVIgo89/codeby-devops
+2026-10-14T16:55:36.4188640Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:36.4189152Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-14T16:55:36.4189561Z   MAVEN_ARGS: -ntp
+2026-10-14T16:55:36.4189806Z   DOCKER_METADATA_OUTPUT_VERSION: lesson28
+2026-10-14T16:55:36.4190461Z   DOCKER_METADATA_OUTPUT_TAGS: ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28
+ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880
+2026-10-14T16:55:36.4191147Z   DOCKER_METADATA_OUTPUT_TAG_NAMES: lesson28
+sha-1a38880
+2026-10-14T16:55:36.4193039Z   DOCKER_METADATA_OUTPUT_LABELS: org.opencontainers.image.created=2026-10-14T16:55:36.374Z
+org.opencontainers.image.description=
+org.opencontainers.image.licenses=
+org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4
+org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops
+org.opencontainers.image.title=codeby-devops
+org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops
+org.opencontainers.image.version=lesson28
+2026-10-14T16:55:36.4196879Z   DOCKER_METADATA_OUTPUT_ANNOTATIONS: manifest:org.opencontainers.image.created=2026-10-14T16:55:36.374Z
+manifest:org.opencontainers.image.description=
+manifest:org.opencontainers.image.licenses=
+manifest:org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4
+manifest:org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops
+manifest:org.opencontainers.image.title=codeby-devops
+manifest:org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops
+manifest:org.opencontainers.image.version=lesson28
+2026-10-14T16:55:36.4203240Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28","ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880"],"tag-names":["lesson28","sha-1a38880"],"labels":{"org.opencontainers.image.created":"2026-10-14T16:55:36.374Z","org.opencontainers.image.description":"","org.opencontainers.image.licenses":"","org.opencontainers.image.revision":"1a388803ada2d8714bc530c510857fa2db783df4","org.opencontainers.image.source":"https://github.com/AVIgo89/codeby-devops","org.opencontainers.image.title":"codeby-devops","org.opencontainers.image.url":"https://github.com/AVIgo89/codeby-devops","org.opencontainers.image.version":"lesson28"},"annotations":["manifest:org.opencontainers.image.created=2026-10-14T16:55:36.374Z","manifest:org.opencontainers.image.description=","manifest:org.opencontainers.image.licenses=","manifest:org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4","manifest:org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops","manifest:org.opencontainers.image.title=codeby-devops","manifest:org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops","manifest:org.opencontainers.image.version=lesson28"]}
+2026-10-14T16:55:36.4208463Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_TAGS: /home/runner/work/_temp/docker-actions-toolkit-Kpnkc4/docker-metadata-action-bake-tags.json
+2026-10-14T16:55:36.4209413Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_LABELS: /home/runner/work/_temp/docker-actions-toolkit-Kpnkc4/docker-metadata-action-bake-labels.json
+2026-10-14T16:55:36.4210405Z   DOCKER_METADATA_OUTPUT_BAKE_FILE_ANNOTATIONS: /home/runner/work/_temp/docker-actions-toolkit-Kpnkc4/docker-metadata-action-bake-annotations.json
+2026-10-14T16:55:36.4211347Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /home/runner/work/_temp/docker-actions-toolkit-Kpnkc4/docker-metadata-action-bake.json
+2026-10-14T16:55:36.4211913Z ##[endgroup]
+2026-10-14T16:55:36.6733138Z (node:2722) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T16:55:36.6734541Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T16:55:36.6754139Z ##[group]GitHub Actions runtime token ACs
+2026-10-14T16:55:36.6763601Z refs/heads/lesson28: read/write
+2026-10-14T16:55:36.6764187Z refs/heads/main: read
+2026-10-14T16:55:36.6764928Z ##[endgroup]
+2026-10-14T16:55:36.6766169Z ##[group]Docker info
+2026-10-14T16:55:36.6827235Z [command]/usr/bin/docker version
+2026-10-14T16:55:36.7141220Z Client: Docker Engine - Community
+2026-10-14T16:55:36.7159288Z  Version:           28.0.4
+2026-10-14T16:55:36.7160104Z  API version:       1.48
+2026-10-14T16:55:36.7160617Z  Go version:        go1.23.7
+2026-10-14T16:55:36.7161443Z  Git commit:        b8034c0
+2026-10-14T16:55:36.7161969Z  Built:             Tue Mar 25 15:07:16 2025
+2026-10-14T16:55:36.7162761Z  OS/Arch:           linux/amd64
+2026-10-14T16:55:36.7163473Z  Context:           default
+2026-10-14T16:55:36.7163837Z 
+2026-10-14T16:55:36.7164112Z Server: Docker Engine - Community
+2026-10-14T16:55:36.7164835Z  Engine:
+2026-10-14T16:55:36.7165260Z   Version:          28.0.4
+2026-10-14T16:55:36.7166177Z   API version:      1.48 (minimum version 1.24)
+2026-10-14T16:55:36.7167668Z   Go version:       go1.23.7
+2026-10-14T16:55:36.7168204Z   Git commit:       6430e49
+2026-10-14T16:55:36.7168976Z   Built:            Tue Mar 25 15:07:16 2025
+2026-10-14T16:55:36.7169758Z   OS/Arch:          linux/amd64
+2026-10-14T16:55:36.7170311Z   Experimental:     false
+2026-10-14T16:55:36.7170992Z  containerd:
+2026-10-14T16:55:36.7171438Z   Version:          v2.4.1
+2026-10-14T16:55:36.7172227Z   GitCommit:        f2551031d7276a770f65f98c9b52e57e7dad07e8
+2026-10-14T16:55:36.7172865Z  runc:
+2026-10-14T16:55:36.7173487Z   Version:          1.5.2
+2026-10-14T16:55:36.7173986Z   GitCommit:        v1.5.2-0-g29dd3dc2
+2026-10-14T16:55:36.7174747Z  docker-init:
+2026-10-14T16:55:36.7175196Z   Version:          0.19.0
+2026-10-14T16:55:36.7175907Z   GitCommit:        de40ad0
+2026-10-14T16:55:36.7206695Z [command]/usr/bin/docker info
+2026-10-14T16:55:37.0456406Z Client: Docker Engine - Community
+2026-10-14T16:55:37.0457048Z  Version:    28.0.4
+2026-10-14T16:55:37.0457603Z  Context:    default
+2026-10-14T16:55:37.0458089Z  Debug Mode: false
+2026-10-14T16:55:37.0459027Z  Plugins:
+2026-10-14T16:55:37.0459398Z   buildx: Docker Buildx (Docker Inc.)
+2026-10-14T16:55:37.0459706Z     Version:  v0.38.0
+2026-10-14T16:55:37.0460043Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+2026-10-14T16:55:37.0460414Z   compose: Docker Compose (Docker Inc.)
+2026-10-14T16:55:37.0460705Z     Version:  v2.38.2
+2026-10-14T16:55:37.0461005Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+2026-10-14T16:55:37.0461263Z 
+2026-10-14T16:55:37.0461351Z Server:
+2026-10-14T16:55:37.0461548Z  Containers: 0
+2026-10-14T16:55:37.0461762Z   Running: 0
+2026-10-14T16:55:37.0461964Z   Paused: 0
+2026-10-14T16:55:37.0462170Z   Stopped: 0
+2026-10-14T16:55:37.0462378Z  Images: 6
+2026-10-14T16:55:37.0462599Z  Server Version: 28.0.4
+2026-10-14T16:55:37.0462850Z  Storage Driver: overlay2
+2026-10-14T16:55:37.0463335Z   Backing Filesystem: extfs
+2026-10-14T16:55:37.0463869Z   Supports d_type: true
+2026-10-14T16:55:37.0464783Z   Using metacopy: false
+2026-10-14T16:55:37.0465438Z   Native Overlay Diff: false
+2026-10-14T16:55:37.0466194Z   userxattr: false
+2026-10-14T16:55:37.0466666Z  Logging Driver: json-file
+2026-10-14T16:55:37.0467167Z  Cgroup Driver: systemd
+2026-10-14T16:55:37.0467629Z  Cgroup Version: 2
+2026-10-14T16:55:37.0468062Z  Plugins:
+2026-10-14T16:55:37.0468518Z   Volume: local
+2026-10-14T16:55:37.0468876Z   Network: bridge host ipvlan macvlan null overlay
+2026-10-14T16:55:37.0469379Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+2026-10-14T16:55:37.0470007Z  Swarm: inactive
+2026-10-14T16:55:37.0470915Z  Runtimes: io.containerd.runc.v2 runc
+2026-10-14T16:55:37.0471658Z  Default Runtime: runc
+2026-10-14T16:55:37.0472104Z  Init Binary: docker-init
+2026-10-14T16:55:37.0472473Z  containerd version: f2551031d7276a770f65f98c9b52e57e7dad07e8
+2026-10-14T16:55:37.0472905Z  runc version: v1.5.2-0-g29dd3dc2
+2026-10-14T16:55:37.0473297Z  init version: de40ad0
+2026-10-14T16:55:37.0473558Z  Security Options:
+2026-10-14T16:55:37.0473788Z   apparmor
+2026-10-14T16:55:37.0473988Z   seccomp
+2026-10-14T16:55:37.0474191Z    Profile: builtin
+2026-10-14T16:55:37.0474405Z   cgroupns
+2026-10-14T16:55:37.0474629Z  Kernel Version: 6.17.0-1022-azure
+2026-10-14T16:55:37.0474921Z  Operating System: Ubuntu 24.04.5 LTS
+2026-10-14T16:55:37.0475263Z  OSType: linux
+2026-10-14T16:55:37.0475576Z  Architecture: x86_64
+2026-10-14T16:55:37.0476514Z  CPUs: 4
+2026-10-14T16:55:37.0476761Z  Total Memory: 15.61GiB
+2026-10-14T16:55:37.0477013Z  Name: runnervm8k3b6
+2026-10-14T16:55:37.0477277Z  ID: 6134b6ae-8eb1-4f62-889e-a360c80bcfbf
+2026-10-14T16:55:37.0477589Z  Docker Root Dir: /var/lib/docker
+2026-10-14T16:55:37.0477864Z  Debug Mode: false
+2026-10-14T16:55:37.0478092Z  Username: githubactions
+2026-10-14T16:55:37.0478343Z  Experimental: false
+2026-10-14T16:55:37.0478578Z  Insecure Registries:
+2026-10-14T16:55:37.0478833Z   ::1/128
+2026-10-14T16:55:37.0479025Z   127.0.0.0/8
+2026-10-14T16:55:37.0479258Z  Live Restore Enabled: false
+2026-10-14T16:55:37.0479423Z 
+2026-10-14T16:55:37.0480029Z ##[endgroup]
+2026-10-14T16:55:37.0480734Z ##[group]Proxy configuration
+2026-10-14T16:55:37.0482669Z No proxy configuration found
+2026-10-14T16:55:37.0483636Z ##[endgroup]
+2026-10-14T16:55:37.1276138Z ##[group]Buildx version
+2026-10-14T16:55:37.1307173Z [command]/usr/bin/docker buildx version
+2026-10-14T16:55:37.1915572Z github.com/docker/buildx v0.38.0 0dbe87f36ed472fe36b6796c3f70b4210a731fc5
+2026-10-14T16:55:37.1950905Z ##[endgroup]
+2026-10-14T16:55:37.1951592Z ##[group]Builder info
+2026-10-14T16:55:37.2864280Z {
+2026-10-14T16:55:37.2864746Z   "nodes": [
+2026-10-14T16:55:37.2865181Z     {
+2026-10-14T16:55:37.2865591Z       "name": "default",
+2026-10-14T16:55:37.2866526Z       "endpoint": "default",
+2026-10-14T16:55:37.2866995Z       "status": "running",
+2026-10-14T16:55:37.2867450Z       "buildkit": "v0.20.2",
+2026-10-14T16:55:37.2868098Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386",
+2026-10-14T16:55:37.2868809Z       "features": {
+2026-10-14T16:55:37.2869463Z         "Automatically load images to the Docker Engine image store": true,
+2026-10-14T16:55:37.2871011Z         "Cache export": true,
+2026-10-14T16:55:37.2871571Z         "Direct push": true,
+2026-10-14T16:55:37.2872040Z         "Docker exporter": true,
+2026-10-14T16:55:37.2872546Z         "Multi-platform build": true,
+2026-10-14T16:55:37.2873067Z         "OCI exporter": true,
+2026-10-14T16:55:37.2873542Z         "Prefer image digest": true
+2026-10-14T16:55:37.2874017Z       },
+2026-10-14T16:55:37.2874369Z       "labels": {
+2026-10-14T16:55:37.2875007Z         "org.mobyproject.buildkit.worker.moby.host-gateway-ip": "172.17.0.1"
+2026-10-14T16:55:37.2875958Z       }
+2026-10-14T16:55:37.2876316Z     }
+2026-10-14T16:55:37.2876642Z   ],
+2026-10-14T16:55:37.2876989Z   "name": "default",
+2026-10-14T16:55:37.2877386Z   "driver": "docker"
+2026-10-14T16:55:37.2877770Z }
+2026-10-14T16:55:37.2878545Z ##[endgroup]
+2026-10-14T16:55:37.4402344Z [command]/usr/bin/docker buildx build --file lesson28/Dockerfile.hello-jenkins --iidfile /home/runner/work/_temp/docker-actions-toolkit-j1Mr7f/build-iidfile-1c9262c5fa.txt --label org.opencontainers.image.created=2026-10-14T16:55:36.374Z --label org.opencontainers.image.description= --label org.opencontainers.image.licenses= --label org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4 --label org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops --label org.opencontainers.image.title=codeby-devops --label org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops --label org.opencontainers.image.version=lesson28 --tag ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28 --tag ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880 --metadata-file /home/runner/work/_temp/docker-actions-toolkit-j1Mr7f/build-metadata-7d3db88bc6.json --push src/hello-jenkins
+2026-10-14T16:55:37.7756862Z #0 building with "default" instance using docker driver
+2026-10-14T16:55:37.7757553Z 
+2026-10-14T16:55:37.7757940Z #1 [internal] load build definition from Dockerfile.hello-jenkins
+2026-10-14T16:55:37.7758615Z #1 transferring dockerfile: 182B done
+2026-10-14T16:55:37.7759234Z #1 DONE 0.0s
+2026-10-14T16:55:37.7759434Z 
+2026-10-14T16:55:37.7759768Z #2 [auth] library/eclipse-temurin:pull token for registry-1.docker.io
+2026-10-14T16:55:37.7760397Z #2 DONE 0.0s
+2026-10-14T16:55:37.7760581Z 
+2026-10-14T16:55:37.7760970Z #3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre-alpine
+2026-10-14T16:55:37.9808032Z #3 DONE 0.4s
+2026-10-14T16:55:38.0985217Z 
+2026-10-14T16:55:38.0986677Z #4 [internal] load .dockerignore
+2026-10-14T16:55:38.0987525Z #4 transferring context: 2B done
+2026-10-14T16:55:38.0987842Z #4 DONE 0.0s
+2026-10-14T16:55:38.0987989Z 
+2026-10-14T16:55:38.0988114Z #5 [internal] load build context
+2026-10-14T16:55:38.0988413Z #5 transferring context: 2.83kB done
+2026-10-14T16:55:38.0988685Z #5 DONE 0.0s
+2026-10-14T16:55:38.0988808Z 
+2026-10-14T16:55:38.0989284Z #6 [1/3] FROM docker.io/library/eclipse-temurin:17-jre-alpine@sha256:3c472129dc75a8d1d7a3f2df5b2093a8077e4493deff046754d4764d0371de63
+2026-10-14T16:55:38.0990260Z #6 resolve docker.io/library/eclipse-temurin:17-jre-alpine@sha256:3c472129dc75a8d1d7a3f2df5b2093a8077e4493deff046754d4764d0371de63 done
+2026-10-14T16:55:38.0991064Z #6 sha256:54692868bb7431d6f6d1a2e062751bb69b6ea40e7a8789e4a976ce21ce767830 4.00kB / 4.00kB done
+2026-10-14T16:55:38.0992685Z #6 sha256:f67820664a14b831543f8a1c48f926e7d40bdb0f1f4e7a133d53e53559ccbd03 9.44MB / 19.44MB 0.1s
+2026-10-14T16:55:38.0993368Z #6 sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf 1.05MB / 47.19MB 0.1s
+2026-10-14T16:55:38.0994009Z #6 sha256:b13c582bc86c00d52360e98f37b00bc7f02ea3262b11f2e3ded435c6cb82b017 127B / 127B 0.1s done
+2026-10-14T16:55:38.0994951Z #6 sha256:2b4bfbd732889dc44f84448164807969598d889b521a06a509bfa6f3149e8e0e 2.46kB / 2.46kB 0.1s done
+2026-10-14T16:55:38.0996351Z #6 sha256:3c472129dc75a8d1d7a3f2df5b2093a8077e4493deff046754d4764d0371de63 1.38kB / 1.38kB done
+2026-10-14T16:55:38.0997039Z #6 sha256:d1c3a4f3577405164ba294be32ee85ba16ec544959a85e8fdc5a10bb04f46fc1 1.95kB / 1.95kB done
+2026-10-14T16:55:38.1991588Z #6 sha256:f67820664a14b831543f8a1c48f926e7d40bdb0f1f4e7a133d53e53559ccbd03 19.44MB / 19.44MB 0.1s done
+2026-10-14T16:55:38.1995481Z #6 sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf 38.80MB / 47.19MB 0.2s
+2026-10-14T16:55:38.1997181Z #6 extracting sha256:f67820664a14b831543f8a1c48f926e7d40bdb0f1f4e7a133d53e53559ccbd03
+2026-10-14T16:55:38.3334592Z #6 sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf 47.19MB / 47.19MB 0.2s done
+2026-10-14T16:55:38.5460742Z #6 extracting sha256:f67820664a14b831543f8a1c48f926e7d40bdb0f1f4e7a133d53e53559ccbd03 0.4s done
+2026-10-14T16:55:39.1308808Z #6 extracting sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf
+2026-10-14T16:55:39.7765649Z #6 extracting sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf 0.6s done
+2026-10-14T16:55:39.7768377Z #6 extracting sha256:b13c582bc86c00d52360e98f37b00bc7f02ea3262b11f2e3ded435c6cb82b017
+2026-10-14T16:55:39.9819367Z #6 extracting sha256:b13c582bc86c00d52360e98f37b00bc7f02ea3262b11f2e3ded435c6cb82b017 done
+2026-10-14T16:55:39.9820823Z #6 extracting sha256:2b4bfbd732889dc44f84448164807969598d889b521a06a509bfa6f3149e8e0e done
+2026-10-14T16:55:39.9821572Z #6 DONE 1.8s
+2026-10-14T16:55:39.9821767Z 
+2026-10-14T16:55:39.9821949Z #7 [2/3] WORKDIR /app
+2026-10-14T16:55:39.9822310Z #7 DONE 0.0s
+2026-10-14T16:55:39.9822499Z 
+2026-10-14T16:55:39.9822677Z #8 [3/3] COPY target/*.jar app.jar
+2026-10-14T16:55:39.9823097Z #8 DONE 0.0s
+2026-10-14T16:55:39.9823284Z 
+2026-10-14T16:55:39.9823406Z #9 exporting to image
+2026-10-14T16:55:39.9823696Z #9 exporting layers
+2026-10-14T16:55:40.0083617Z #9 exporting layers 0.2s done
+2026-10-14T16:55:40.2326195Z #9 writing image sha256:b3756d6e865e9e3b7029a20b2f5dcca02817fc5864ce0a8daa23142e8402de57 done
+2026-10-14T16:55:40.2327127Z #9 naming to ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28 done
+2026-10-14T16:55:40.2327784Z #9 naming to ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880 done
+2026-10-14T16:55:40.2328224Z #9 DONE 0.2s
+2026-10-14T16:55:40.2328356Z 
+2026-10-14T16:55:40.2328484Z #10 resolving provenance for metadata file
+2026-10-14T16:55:40.2328784Z #10 DONE 0.0s
+2026-10-14T16:55:40.2328912Z 
+2026-10-14T16:55:40.2329429Z #11 pushing ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28 with docker
+2026-10-14T16:55:40.2330206Z #11 pushing layer 4394f2e1401f
+2026-10-14T16:55:40.2330493Z #11 pushing layer 0b353beede51
+2026-10-14T16:55:40.2330754Z #11 pushing layer 6c0c03120c42
+2026-10-14T16:55:40.2331176Z #11 pushing layer 76b42b7b749e
+2026-10-14T16:55:40.2331440Z #11 pushing layer b9398a5bcfd3
+2026-10-14T16:55:40.2331685Z #11 pushing layer a152dfd2607b
+2026-10-14T16:55:40.2331944Z #11 pushing layer 74d97c428c51
+2026-10-14T16:55:40.3642113Z #11 pushing layer 4394f2e1401f 512B / 2.74kB 0.3s
+2026-10-14T16:55:40.5331210Z #11 pushing layer 4394f2e1401f 5.12kB / 2.74kB 0.3s
+2026-10-14T16:55:41.4634164Z #11 pushing layer 0b353beede51 1.4s done
+2026-10-14T16:55:41.7066838Z #11 pushing layer 4394f2e1401f 1.5s done
+2026-10-14T16:55:43.3987014Z #11 pushing layer b9398a5bcfd3 3.3s done
+2026-10-14T16:55:43.5849370Z #11 pushing layer 6c0c03120c42 3.3s done
+2026-10-14T16:55:43.5849914Z #11 pushing layer 76b42b7b749e 3.3s done
+2026-10-14T16:55:43.5850233Z #11 pushing layer a152dfd2607b 3.3s done
+2026-10-14T16:55:43.5850517Z #11 pushing layer 74d97c428c51 3.3s done
+2026-10-14T16:55:43.5850788Z #11 DONE 3.4s
+2026-10-14T16:55:43.5850913Z 
+2026-10-14T16:55:43.5851163Z #12 pushing ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880 with docker
+2026-10-14T16:55:44.1226768Z #12 pushing layer 76b42b7b749e 0.7s done
+2026-10-14T16:55:44.2733348Z #12 pushing layer 4394f2e1401f 0.7s done
+2026-10-14T16:55:44.2733867Z #12 pushing layer 0b353beede51 0.7s done
+2026-10-14T16:55:44.2734278Z #12 pushing layer 6c0c03120c42 0.7s done
+2026-10-14T16:55:44.2734784Z #12 pushing layer b9398a5bcfd3 0.7s done
+2026-10-14T16:55:44.2735153Z #12 pushing layer a152dfd2607b 0.7s done
+2026-10-14T16:55:44.2736273Z #12 pushing layer 74d97c428c51 0.7s done
+2026-10-14T16:55:44.2736625Z #12 DONE 0.7s
+2026-10-14T16:55:44.5189449Z ##[group]ImageID
+2026-10-14T16:55:44.5190187Z sha256:b3756d6e865e9e3b7029a20b2f5dcca02817fc5864ce0a8daa23142e8402de57
+2026-10-14T16:55:44.5191126Z ##[endgroup]
+2026-10-14T16:55:44.5191730Z ##[group]Digest
+2026-10-14T16:55:44.5192332Z sha256:011b71f28c3ee0e9a73e1b793b093ab8643b1c7029dc7809b68f52575c063918
+2026-10-14T16:55:44.5193227Z ##[endgroup]
+2026-10-14T16:55:44.5193768Z ##[group]Metadata
+2026-10-14T16:55:44.5194095Z {
+2026-10-14T16:55:44.5194430Z   "buildx.build.provenance": {
+2026-10-14T16:55:44.5194836Z     "builder": {
+2026-10-14T16:55:44.5195164Z       "id": ""
+2026-10-14T16:55:44.5195475Z     },
+2026-10-14T16:55:44.5196272Z     "buildType": "https://mobyproject.org/buildkit@v1",
+2026-10-14T16:55:44.5196815Z     "materials": [
+2026-10-14T16:55:44.5197146Z       {
+2026-10-14T16:55:44.5198094Z         "uri": "pkg:docker/eclipse-temurin@17-jre-alpine?platform=linux%2Famd64",
+2026-10-14T16:55:44.5198810Z         "digest": {
+2026-10-14T16:55:44.5199449Z           "sha256": "3c472129dc75a8d1d7a3f2df5b2093a8077e4493deff046754d4764d0371de63"
+2026-10-14T16:55:44.5200128Z         }
+2026-10-14T16:55:44.5200432Z       }
+2026-10-14T16:55:44.5200738Z     ],
+2026-10-14T16:55:44.5201054Z     "invocation": {
+2026-10-14T16:55:44.5201489Z       "configSource": {
+2026-10-14T16:55:44.5202001Z         "entryPoint": "Dockerfile.hello-jenkins"
+2026-10-14T16:55:44.5202705Z       },
+2026-10-14T16:55:44.5202926Z       "parameters": {
+2026-10-14T16:55:44.5203184Z         "frontend": "dockerfile.v0",
+2026-10-14T16:55:44.5203518Z         "args": {
+2026-10-14T16:55:44.5203904Z           "label:org.opencontainers.image.created": "2026-10-14T16:55:36.374Z",
+2026-10-14T16:55:44.5204423Z           "label:org.opencontainers.image.description": "",
+2026-10-14T16:55:44.5204850Z           "label:org.opencontainers.image.licenses": "",
+2026-10-14T16:55:44.5205394Z           "label:org.opencontainers.image.revision": "1a388803ada2d8714bc530c510857fa2db783df4",
+2026-10-14T16:55:44.5206797Z           "label:org.opencontainers.image.source": "https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:44.5207648Z           "label:org.opencontainers.image.title": "codeby-devops",
+2026-10-14T16:55:44.5208212Z           "label:org.opencontainers.image.url": "https://github.com/AVIgo89/codeby-devops",
+2026-10-14T16:55:44.5208769Z           "label:org.opencontainers.image.version": "lesson28"
+2026-10-14T16:55:44.5209123Z         },
+2026-10-14T16:55:44.5209345Z         "locals": [
+2026-10-14T16:55:44.5209581Z           {
+2026-10-14T16:55:44.5209783Z             "name": "context"
+2026-10-14T16:55:44.5210024Z           },
+2026-10-14T16:55:44.5210236Z           {
+2026-10-14T16:55:44.5210445Z             "name": "dockerfile"
+2026-10-14T16:55:44.5210683Z           }
+2026-10-14T16:55:44.5210874Z         ]
+2026-10-14T16:55:44.5211056Z       },
+2026-10-14T16:55:44.5211270Z       "environment": {
+2026-10-14T16:55:44.5211556Z         "platform": "linux/amd64"
+2026-10-14T16:55:44.5211868Z       }
+2026-10-14T16:55:44.5212089Z     }
+2026-10-14T16:55:44.5212336Z   },
+2026-10-14T16:55:44.5212689Z   "buildx.build.ref": "default/default/j6nix93e5h9et8izryidmiij8",
+2026-10-14T16:55:44.5213405Z   "containerimage.config.digest": "sha256:b3756d6e865e9e3b7029a20b2f5dcca02817fc5864ce0a8daa23142e8402de57",
+2026-10-14T16:55:44.5214180Z   "containerimage.digest": "sha256:011b71f28c3ee0e9a73e1b793b093ab8643b1c7029dc7809b68f52575c063918",
+2026-10-14T16:55:44.5215034Z   "image.name": "ghcr.io/avigo89/codeby-devops-hello-jenkins:lesson28,ghcr.io/avigo89/codeby-devops-hello-jenkins:sha-1a38880"
+2026-10-14T16:55:44.5215883Z }
+2026-10-14T16:55:44.5216620Z ##[endgroup]
+2026-10-14T16:55:44.5389017Z Post job cleanup.
+2026-10-14T16:55:44.7743490Z ##[group]Removing temp folder /home/runner/work/_temp/docker-actions-toolkit-j1Mr7f
+2026-10-14T16:55:44.7750281Z (node:2984) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T16:55:44.7751438Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T16:55:44.7752138Z ##[endgroup]
+2026-10-14T16:55:44.7752722Z ##[group]Post cache
+2026-10-14T16:55:44.7754504Z State not set
+2026-10-14T16:55:44.7755317Z ##[endgroup]
+2026-10-14T16:55:44.7953469Z Post job cleanup.
+2026-10-14T16:55:45.1272583Z ##[group]Logout from ghcr.io
+2026-10-14T16:55:45.1297042Z (node:2992) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T16:55:45.1298264Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T16:55:45.1338801Z [command]/usr/bin/docker logout ghcr.io
+2026-10-14T16:55:45.1501394Z Removing login credentials for ghcr.io
+2026-10-14T16:55:45.1536948Z ##[endgroup]
+2026-10-14T16:55:45.1537998Z ##[group]Post cache
+2026-10-14T16:55:45.1538702Z State not set
+2026-10-14T16:55:45.1539442Z ##[endgroup]
+2026-10-14T16:55:45.1747679Z Post job cleanup.
+2026-10-14T16:55:45.3109978Z Cache hit occurred on the primary key setup-java-Linux-x64-maven-4de7e2e1a8dbfd83ab63ce29f6a153e7dd797816605000abfc5727972b10464d, not saving cache.
+2026-10-14T16:55:45.3287306Z Post job cleanup.
+2026-10-14T16:55:45.4266169Z [command]/usr/bin/git version
+2026-10-14T16:55:45.4310910Z git version 2.55.0
+2026-10-14T16:55:45.4357843Z Temporarily overriding HOME='/home/runner/work/_temp/fe880e84-aea4-4055-99f5-7167dfb6acc3' before making global git config changes
+2026-10-14T16:55:45.4359252Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-14T16:55:45.4364761Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops/src
+2026-10-14T16:55:45.4414201Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-14T16:55:45.4459128Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-14T16:55:45.4727317Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-14T16:55:45.4767244Z http.https://github.com/.extraheader
+2026-10-14T16:55:45.4796721Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-14T16:55:45.4825513Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-14T16:55:45.5143608Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-14T16:55:45.5189372Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-14T16:55:45.5590262Z Post job cleanup.
+2026-10-14T16:55:45.6467152Z [command]/usr/bin/git version
+2026-10-14T16:55:45.6515752Z git version 2.55.0
+2026-10-14T16:55:45.6560674Z Temporarily overriding HOME='/home/runner/work/_temp/ab793547-ca82-45ee-a288-52b2b0f905a8' before making global git config changes
+2026-10-14T16:55:45.6562250Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-14T16:55:45.6567701Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops
+2026-10-14T16:55:45.6610448Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-14T16:55:45.6649507Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-14T16:55:45.6919214Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-14T16:55:45.6944440Z http.https://github.com/.extraheader
+2026-10-14T16:55:45.6958476Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-14T16:55:45.6997229Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-14T16:55:45.7263767Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-14T16:55:45.7308288Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-14T16:55:45.7751687Z Cleaning up orphan processes
+2026-10-14T16:55:45.8034748Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4, docker/build-push-action@v5, docker/login-action@v3, docker/metadata-action@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
