@@ -1,0 +1,349 @@
+
+3s
+Current runner version: '2.337.0'
+Runner Image Provisioner
+Operating System
+Runner Image
+GITHUB_TOKEN Permissions
+Secret source: Actions
+Cache mode: write
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+Download action repository 'actions/setup-java@v5' (SHA:b6effb05e454b25005698d916606bdc6ffcbf961)
+Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+Download action repository 'docker/metadata-action@v5' (SHA:c299e40c65443455700f0fdfc63efafe5b349051)
+Download action repository 'docker/build-push-action@v5' (SHA:ca052bb54ab0790a636c9b5f226502c73d547a25)
+Complete job name: hello-devops
+0s
+Run actions/checkout@v5
+Syncing repository: AVIgo89/codeby-devops
+Getting Git version info
+Temporarily overriding HOME='/home/runner/work/_temp/04880cd6-5909-437a-af7b-5ad21ff5e916' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops
+Deleting the contents of '/home/runner/work/codeby-devops/codeby-devops'
+Initializing the repository
+Disabling automatic garbage collection
+Setting up auth
+Fetching the repository
+Determining the checkout info
+/usr/bin/git sparse-checkout disable
+/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Checking out the ref
+/usr/bin/git log -1 --format=%H
+1a388803ada2d8714bc530c510857fa2db783df4
+1s
+Run actions/checkout@v5
+Syncing repository: AVIgo89/codeby-devops
+Getting Git version info
+Temporarily overriding HOME='/home/runner/work/_temp/7614a5e0-9e57-406d-828a-08bc83c848a9' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops/src
+Initializing the repository
+Disabling automatic garbage collection
+Setting up auth
+Fetching the repository
+Determining the checkout info
+/usr/bin/git sparse-checkout disable
+/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Checking out the ref
+/usr/bin/git log -1 --format=%H
+cf443e10a9f0b0d65cc5f852a1d6b671e302d21d
+1s
+Run actions/setup-java@v5
+Installed distributions
+Creating settings.xml with server-id: github
+Writing to /home/runner/.m2/settings.xml
+Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+Cache hit for: setup-java-Linux-x64-maven-4de7e2e1a8dbfd83ab63ce29f6a153e7dd797816605000abfc5727972b10464d
+Received 20026726 of 20026726 (100.0%), 45.5 MBs/sec
+Cache Size: ~19 MB (20026726 B)
+/usr/bin/tar -xf /home/runner/work/_temp/519c3d1b-2185-45c4-bcf5-c67aa519099f/cache.tzst -P -C /home/runner/work/codeby-devops/codeby-devops --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: setup-java-Linux-x64-maven-4de7e2e1a8dbfd83ab63ce29f6a153e7dd797816605000abfc5727972b10464d
+14s
+Run mvn -B -DskipTests clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 24086 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ my-app ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ my-app ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ my-app ---
+[INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-devops/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ my-app ---
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug release 21] to target/classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ my-app ---
+[INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-devops/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ my-app ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.6.0:test (default-test) @ my-app ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ my-app ---
+[INFO] Building jar: /home/runner/work/codeby-devops/codeby-devops/src/hello-devops/target/my-app-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.514 s
+[INFO] Finished at: 2026-10-14T16:55:33Z
+[INFO] ------------------------------------------------------------------------
+4s
+Run mvn -B test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 24086 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ my-app ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ my-app ---
+[INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-devops/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ my-app ---
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ my-app ---
+[INFO] skip non existing resourceDirectory /home/runner/work/codeby-devops/codeby-devops/src/hello-devops/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ my-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.6.0:test (default-test) @ my-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mycompany.app.AppTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s -- in com.mycompany.app.AppTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.208 s
+[INFO] Finished at: 2026-10-14T16:55:38Z
+[INFO] ------------------------------------------------------------------------
+1s
+Run actions/upload-artifact@v4
+(node:2641) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+With the provided path, there will be 2 files uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+(node:2641) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Uploaded bytes 1725
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is 9b0eb47448ced616bc90f163f5f18b37dcd073aa0e6c8838379232ce08174a4a
+Finalizing artifact upload
+Artifact hello-devops-test-reports.zip successfully finalized. Artifact ID 11914610382
+Artifact hello-devops-test-reports has been successfully uploaded! Final size is 1725 bytes. Artifact ID is 11914610382
+Artifact download URL: https://github.com/AVIgo89/codeby-devops/actions/runs/38602172149/artifacts/11914610382
+1s
+Run actions/upload-artifact@v4
+(node:2653) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+With the provided path, there will be 1 file uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+(node:2653) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Uploaded bytes 1910
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is 0f7202d1ce702cf4f0540fc39adf47ff23ce98a906e2ff76b83cafb14ee2a657
+Finalizing artifact upload
+Artifact hello-devops-jar.zip successfully finalized. Artifact ID 11914795290
+Artifact hello-devops-jar has been successfully uploaded! Final size is 1910 bytes. Artifact ID is 11914795290
+Artifact download URL: https://github.com/AVIgo89/codeby-devops/actions/runs/38602172149/artifacts/11914795290
+1s
+Run docker/login-action@v3
+Logging into ghcr.io...
+(node:2666) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Login Succeeded!
+1s
+Run docker/metadata-action@v5
+(node:2687) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Context info
+Processing images input
+Processing tags input
+Processing flavor input
+Docker image version
+Docker tags
+Docker labels
+Annotations
+JSON output
+Bake file definition (tags)
+Bake file definition (labels)
+Bake file definition (annotations)
+8s
+Run docker/build-push-action@v5
+(node:2699) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+GitHub Actions runtime token ACs
+Docker info
+Proxy configuration
+Buildx version
+Builder info
+/usr/bin/docker buildx build --file lesson28/Dockerfile.hello-devops --iidfile /home/runner/work/_temp/docker-actions-toolkit-ftdhfc/build-iidfile-67b00d3ccc.txt --label org.opencontainers.image.created=2026-10-14T16:55:42.039Z --label org.opencontainers.image.description= --label org.opencontainers.image.licenses= --label org.opencontainers.image.revision=1a388803ada2d8714bc530c510857fa2db783df4 --label org.opencontainers.image.source=https://github.com/AVIgo89/codeby-devops --label org.opencontainers.image.title=codeby-devops --label org.opencontainers.image.url=https://github.com/AVIgo89/codeby-devops --label org.opencontainers.image.version=lesson28 --tag ghcr.io/avigo89/codeby-devops-hello-devops:lesson28 --tag ghcr.io/avigo89/codeby-devops-hello-devops:sha-1a38880 --metadata-file /home/runner/work/_temp/docker-actions-toolkit-ftdhfc/build-metadata-594f2dd47b.json --push src/hello-devops
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.hello-devops
+#1 transferring dockerfile: 181B done
+#1 DONE 0.0s
+
+#2 [auth] library/eclipse-temurin:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre-alpine
+#3 DONE 0.5s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 2.83kB done
+#5 DONE 0.0s
+
+#6 [1/3] FROM docker.io/library/eclipse-temurin:17-jre-alpine@sha256:3c472129dc75a8d1d7a3f2df5b2093a8077e4493deff046754d4764d0371de63
+#6 resolve docker.io/library/eclipse-temurin:17-jre-alpine@sha256:3c472129dc75a8d1d7a3f2df5b2093a8077e4493deff046754d4764d0371de63 done
+#6 sha256:f67820664a14b831543f8a1c48f926e7d40bdb0f1f4e7a133d53e53559ccbd03 19.44MB / 19.44MB 0.1s done
+#6 sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf 3.15MB / 47.19MB 0.1s
+#6 sha256:b13c582bc86c00d52360e98f37b00bc7f02ea3262b11f2e3ded435c6cb82b017 127B / 127B 0.1s done
+#6 sha256:2b4bfbd732889dc44f84448164807969598d889b521a06a509bfa6f3149e8e0e 0B / 2.46kB 0.1s
+#6 sha256:3c472129dc75a8d1d7a3f2df5b2093a8077e4493deff046754d4764d0371de63 1.38kB / 1.38kB done
+#6 sha256:d1c3a4f3577405164ba294be32ee85ba16ec544959a85e8fdc5a10bb04f46fc1 1.95kB / 1.95kB done
+#6 sha256:54692868bb7431d6f6d1a2e062751bb69b6ea40e7a8789e4a976ce21ce767830 4.00kB / 4.00kB done
+#6 extracting sha256:f67820664a14b831543f8a1c48f926e7d40bdb0f1f4e7a133d53e53559ccbd03
+#6 sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf 47.19MB / 47.19MB 0.2s done
+#6 sha256:2b4bfbd732889dc44f84448164807969598d889b521a06a509bfa6f3149e8e0e 2.46kB / 2.46kB 0.1s done
+#6 extracting sha256:f67820664a14b831543f8a1c48f926e7d40bdb0f1f4e7a133d53e53559ccbd03 0.4s done
+#6 extracting sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf
+#6 extracting sha256:647d5c102196b54d2dfccaa7f779a204eb9a388ded7e4053bcce16c387207fcf 0.6s done
+#6 extracting sha256:b13c582bc86c00d52360e98f37b00bc7f02ea3262b11f2e3ded435c6cb82b017
+#6 extracting sha256:b13c582bc86c00d52360e98f37b00bc7f02ea3262b11f2e3ded435c6cb82b017 done
+#6 extracting sha256:2b4bfbd732889dc44f84448164807969598d889b521a06a509bfa6f3149e8e0e done
+#6 DONE 1.4s
+
+#7 [2/3] WORKDIR /app
+#7 DONE 0.0s
+
+#8 [3/3] COPY target/*.jar app.jar
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.2s done
+#9 writing image sha256:adccc172bdf55323fe1bb76e255b750ecf7537eafb40ed8e3e1a719d80af8252 done
+#9 naming to ghcr.io/avigo89/codeby-devops-hello-devops:lesson28 done
+#9 naming to ghcr.io/avigo89/codeby-devops-hello-devops:sha-1a38880 done
+#9 DONE 0.2s
+
+#10 resolving provenance for metadata file
+#10 DONE 0.0s
+
+#11 pushing ghcr.io/avigo89/codeby-devops-hello-devops:lesson28 with docker
+#11 pushing layer 1d727bcb852b
+#11 pushing layer bb41df071f0d
+#11 pushing layer 6c0c03120c42
+#11 pushing layer 76b42b7b749e
+#11 pushing layer b9398a5bcfd3
+#11 pushing layer a152dfd2607b
+#11 pushing layer 74d97c428c51
+#11 pushing layer 1d727bcb852b 5.12kB / 2.74kB 0.4s
+#11 pushing layer bb41df071f0d 1.7s done
+#11 pushing layer 1d727bcb852b 2.0s done
+#11 pushing layer 76b42b7b749e 4.0s done
+#11 pushing layer 6c0c03120c42 4.0s done
+#11 pushing layer b9398a5bcfd3 4.0s done
+#11 pushing layer a152dfd2607b 4.0s done
+#11 pushing layer 74d97c428c51 4.0s done
+#11 DONE 4.1s
+
+#12 pushing ghcr.io/avigo89/codeby-devops-hello-devops:sha-1a38880 with docker
+#12 pushing layer 76b42b7b749e 0.8s done
+#12 pushing layer 1d727bcb852b 0.8s done
+#12 pushing layer bb41df071f0d 0.8s done
+#12 pushing layer 6c0c03120c42 0.8s done
+#12 pushing layer b9398a5bcfd3 0.8s done
+#12 pushing layer a152dfd2607b 0.8s done
+#12 pushing layer 74d97c428c51 0.8s done
+#12 DONE 0.9s
+ImageID
+Digest
+Metadata
+0s
+Post job cleanup.
+Removing temp folder /home/runner/work/_temp/docker-actions-toolkit-ftdhfc
+Post cache
+1s
+Post job cleanup.
+Logout from ghcr.io
+Post cache
+0s
+Post job cleanup.
+Cache hit occurred on the primary key setup-java-Linux-x64-maven-4de7e2e1a8dbfd83ab63ce29f6a153e7dd797816605000abfc5727972b10464d, not saving cache.
+0s
+Post job cleanup.
+/usr/bin/git version
+git version 2.55.0
+Temporarily overriding HOME='/home/runner/work/_temp/c65716f9-b784-41d1-ba31-0fb16811e870' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops/src
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+0s
+Post job cleanup.
+/usr/bin/git version
+git version 2.55.0
+Temporarily overriding HOME='/home/runner/work/_temp/93a36007-e115-4fd7-b3ad-d063e9732b4b' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/codeby-devops/codeby-devops
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+1s
+Cleaning up orphan processes
+Warning: Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4, docker/build-push-action@v5, docker/login-action@v3, docker/metadata-action@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
