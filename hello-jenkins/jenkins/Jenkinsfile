@@ -21,6 +21,22 @@ pipeline {
                 }
             }
         }
+        stage('SonarQube Analysis') {
+            steps {
+                // 'MySonarQube' — это имя, в глобальных настройках Jenkins
+                withSonarQubeEnv('sonar-scanner') {
+                    // -Dsonar.projectKey должен совпадать с ключом проекта в SonarQube
+                    sh 'mvn sonar:sonar -Dsonar.projectKey=hello-jenkins'
+                }
+            }
+        }
+        stage("Quality Gate") {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true
+                }
+            }
+        }
         stage('Deliver') { 
             steps {
                 sh './jenkins/scripts/deliver.sh' 
